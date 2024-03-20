@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="" />
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
@@ -21,9 +31,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.TextEditor.executor": "Run",
+    "Application.TextEditorConListing.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -43,10 +61,69 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
+      <workItem from="1710959254866" duration="371000" />
     </task>
+    <task id="LOCAL-00001" summary="2">
+      <option name="closed" value="true" />
+      <created>1710959443978</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710959443978</updated>
+    </task>
+    <task id="LOCAL-00002" summary="3">
+      <option name="closed" value="true" />
+      <created>1710959451758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710959451758</updated>
+    </task>
+    <task id="LOCAL-00003" summary="4">
+      <option name="closed" value="true" />
+      <created>1710959478770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710959478770</updated>
+    </task>
+    <task id="LOCAL-00004" summary="5">
+      <option name="closed" value="true" />
+      <created>1710959580639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710959580639</updated>
+    </task>
+    <task id="LOCAL-00005" summary="6">
+      <option name="closed" value="true" />
+      <created>1710959608602</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710959608602</updated>
+    </task>
+    <task id="LOCAL-00006" summary="7">
+      <option name="closed" value="true" />
+      <created>1710959624277</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710959624277</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2" />
+    <MESSAGE value="3" />
+    <MESSAGE value="4" />
+    <MESSAGE value="5" />
+    <MESSAGE value="6" />
+    <MESSAGE value="7" />
+    <option name="LAST_COMMIT_MESSAGE" value="7" />
   </component>
 </project>
