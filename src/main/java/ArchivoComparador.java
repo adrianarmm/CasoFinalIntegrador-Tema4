@@ -41,7 +41,7 @@ public class ArchivoComparador {
 
     public static void main(String[] args) {
         File file1 = new File("ruta/al/archivo1.txt");
-        File file2 = new File("ruta/al/archivo2.txt");
+        File file2 = new File("ruta/al/archivo1.txt");
 
         try {
             compareFiles(file1, file2);
