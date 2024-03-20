@@ -23,7 +23,7 @@ public class ArchivoComparador {
                     areFilesIdentical = false;
                     System.out.println("Diferencia encontrada:");
                     System.out.println("Archivo 1: " + (line1 != null ? line1 : "EOF"));
-                    System.out.println("Archivo 1: " + (line1 != null ? line2 : "EOF"));
+                    System.out.println("Archivo 2: " + (line2 != null ? line2 : "EOF"));
                     // Si una línea es null, no necesitamos seguir comparando
                     break;
                 }
