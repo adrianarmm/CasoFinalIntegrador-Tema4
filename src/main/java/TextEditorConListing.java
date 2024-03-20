@@ -32,7 +32,7 @@ public class TextEditorConListing extends JFrame {
             }
         }
 
-        fileList.addListSelectionListener(new ListSelectionListener() {
+        fileList.addListSelectionListener(new ListSelectionListener(){
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
