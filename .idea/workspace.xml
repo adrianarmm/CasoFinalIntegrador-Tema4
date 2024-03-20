@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="37" />
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="39 MAIN" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +37,7 @@
     "Application.DocumentoConBarraDeDesplazamiento.executor": "Run",
     "Application.EditorPrincipal.executor": "Run",
     "Application.HerramientaDeDibujo.executor": "Run",
+    "Application.MAIN.executor": "Run",
     "Application.SeguimientoRaton.executor": "Run",
     "Application.TextAnalysisTool.executor": "Run",
     "Application.TextEditor.executor": "Run",
@@ -70,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
-      <workItem from="1710959254866" duration="1912000" />
+      <workItem from="1710959254866" duration="2221000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <option name="closed" value="true" />
@@ -368,15 +369,29 @@
       <option name="project" value="LOCAL" />
       <updated>1710961167389</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="38&#10;CODIGO LISTO, el codigo esta bien tengo que retocar y añadir los directorios y mas cosas">
+      <option name="closed" value="true" />
+      <created>1710961271207</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1710961271208</updated>
+    </task>
+    <task id="LOCAL-00039" summary="39 MAIN">
+      <option name="closed" value="true" />
+      <created>1710961451936</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1710961451936</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="13" />
-    <MESSAGE value="14" />
     <MESSAGE value="15" />
     <MESSAGE value="16" />
     <MESSAGE value="17" />
@@ -400,6 +415,8 @@
     <MESSAGE value="35" />
     <MESSAGE value="36" />
     <MESSAGE value="37" />
-    <option name="LAST_COMMIT_MESSAGE" value="37" />
+    <MESSAGE value="38&#10;CODIGO LISTO, el codigo esta bien tengo que retocar y añadir los directorios y mas cosas" />
+    <MESSAGE value="39 MAIN" />
+    <option name="LAST_COMMIT_MESSAGE" value="39 MAIN" />
   </component>
 </project>
