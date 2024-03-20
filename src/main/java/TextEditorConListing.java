@@ -56,7 +56,7 @@ public class TextEditorConListing extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            new TextEditorWithListing().setVisible(true);
+            new TextEditorConListing().setVisible(true);
         });
     }
 }
