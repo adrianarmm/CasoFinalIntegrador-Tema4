@@ -5,7 +5,7 @@ public class BusquedaPalabras {
     /**
      * Busca una palabra específica en un documento y cuenta cuántas veces aparece.
      *
-     * @param file El archivo en el que buscar la palabra.
+     * @param  file El archivo en el que buscar la palabra.
      * @param searchWord La palabra a buscar.
      * @return El número de veces que la palabra aparece en el documento.
      * @throws IOException Si ocurre un error al leer el archivo.
