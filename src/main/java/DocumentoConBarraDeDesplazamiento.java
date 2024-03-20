@@ -39,7 +39,7 @@ public class DocumentoConBarraDeDesplazamiento extends JFrame {
             }
         });
 
-        // Inicializar el contenido del área de texto (ejemplo)
+        // Inicializar el contenido del área de texto (ejemplo) CAMBIAR POCO A POCO
         for (int i = 0; i < 100; i++) {
             areaDeTexto.append("Línea " + i + "\n");
         }
