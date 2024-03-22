@@ -4,7 +4,7 @@ import java.awt.*;
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
     private JMenu menuArchivo, menuHerramientas;
-    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda;
+    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras;
 
     public MAIN() {
         inicializarUI();
@@ -33,11 +33,14 @@ public class MAIN extends JFrame {
         menuItemDibujo = new JMenuItem("Herramienta de Dibujo", iconoDibujo);
         menuItemValidadorEmail = new JMenuItem("Validador de Email", iconoEmail);
         menuItemAgenda = new JMenuItem("Agenda de Contactos", iconoAgenda);
+        menuItemBusquedaPalabras = new JMenuItem("Búsqueda de Palabras");
+
 
         menuArchivo.add(menuItemEditor);
         menuHerramientas.add(menuItemDibujo);
         menuHerramientas.add(menuItemValidadorEmail);
         menuHerramientas.add(menuItemAgenda);
+        menuHerramientas.add(menuItemBusquedaPalabras);
 
         menuBar.add(menuArchivo);
         menuBar.add(menuHerramientas);
@@ -56,6 +59,11 @@ public class MAIN extends JFrame {
         menuItemAgenda.addActionListener(e -> {
             AgendaDeContactos agenda = new AgendaDeContactos();
             agenda.setVisible(true);
+        });
+
+        menuItemBusquedaPalabras.addActionListener(e -> {
+            BusquedaPalabras busqueda = new BusquedaPalabras();
+            busqueda.setVisible(true);
         });
     }
 
