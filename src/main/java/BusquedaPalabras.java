@@ -33,7 +33,7 @@ public class BusquedaPalabras {
     }
 
     public static void main(String[] args) {
-        File file = new File("ruta/al/archivo.txt");
+        File file = new File("/Users/adrianareyesmorera/Documents/MENUSTARTASDEQUESO.txt");
         String searchWord = "ejemplo"; // La palabra que quieres buscar en el documento.
 
         try {
@@ -43,4 +43,9 @@ public class BusquedaPalabras {
             System.err.println("Ocurrió un error al leer el archivo: " + e.getMessage());
         }
     }
+
+
+    public void setVisible(boolean b) {
+    }
 }
+

@@ -1,10 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
     private JMenu menuArchivo, menuHerramientas;
-    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras;
+    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento;
 
     public MAIN() {
         inicializarUI();
@@ -34,6 +36,7 @@ public class MAIN extends JFrame {
         menuItemValidadorEmail = new JMenuItem("Validador de Email", iconoEmail);
         menuItemAgenda = new JMenuItem("Agenda de Contactos", iconoAgenda);
         menuItemBusquedaPalabras = new JMenuItem("Búsqueda de Palabras");
+        menuItemDocConBarraDesplazamiento = new JMenuItem("Documento con Barra de Desplazamiento");
 
 
         menuArchivo.add(menuItemEditor);
@@ -41,6 +44,7 @@ public class MAIN extends JFrame {
         menuHerramientas.add(menuItemValidadorEmail);
         menuHerramientas.add(menuItemAgenda);
         menuHerramientas.add(menuItemBusquedaPalabras);
+        menuHerramientas.add(menuItemDocConBarraDesplazamiento);
 
         menuBar.add(menuArchivo);
         menuBar.add(menuHerramientas);
@@ -65,6 +69,11 @@ public class MAIN extends JFrame {
             BusquedaPalabras busqueda = new BusquedaPalabras();
             busqueda.setVisible(true);
         });
+
+        menuItemDocConBarraDesplazamiento.addActionListener(e -> {
+            DocumentoConBarraDeDesplazamiento documento = new DocumentoConBarraDeDesplazamiento();
+            documento.setVisible(true);
+        });
     }
 
     private ImageIcon cargarIcono(String ruta) {
@@ -84,9 +93,36 @@ public class MAIN extends JFrame {
     }
 
 
-private void mostrarMensajeBienvenida() {
+    private void mostrarMensajeBienvenida() {
     JOptionPane.showMessageDialog(this, "Bienvenido, seleccione la opción que quiera.", "Bienvenido", JOptionPane.INFORMATION_MESSAGE);
-}
+    }
+
+    private void realizarBusquedaPalabras() {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("/Users/adrianareyesmorera/Documents/MENUSTARTASDEQUESO.txt")));
+        int result = fileChooser.showOpenDialog(this);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+
+            String searchWord = JOptionPane.showInputDialog(this, "Ingrese la palabra a buscar:");
+
+            if (searchWord != null && !searchWord.isEmpty()) {
+                try {
+                    int occurrences = BusquedaPalabras.countBusquedaPalabras(selectedFile, searchWord);
+                    JOptionPane.showMessageDialog(this, "La palabra \"" + searchWord + "\" aparece " + occurrences + " veces en el documento.",
+                            "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
+                } catch (IOException ex) {
+                    JOptionPane.showMessageDialog(this, "Ocurrió un error al leer el archivo: " + ex.getMessage(),
+                            "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            } else {
+                JOptionPane.showMessageDialog(this, "Debe ingresar una palabra para buscar.",
+                        "Advertencia", JOptionPane.WARNING_MESSAGE);
+            }
+        }
+    }
+
 
 public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MAIN().setVisible(true));
