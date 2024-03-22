@@ -90,6 +90,7 @@ public class MAIN extends JFrame {
         });
 
         menuItemSeguimientoRaton.addActionListener(e -> {
+            abrirSeguimientoRaton();
         });
     }
 
