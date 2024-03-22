@@ -6,7 +6,7 @@ import java.io.IOException;
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
     private JMenu menuArchivo, menuHerramientas;
-    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento;
+    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento, menuItemTextEditorConListing;
 
     public MAIN() {
         inicializarUI();
@@ -37,6 +37,7 @@ public class MAIN extends JFrame {
         menuItemAgenda = new JMenuItem("Agenda de Contactos", iconoAgenda);
         menuItemBusquedaPalabras = new JMenuItem("Búsqueda de Palabras");
         menuItemDocConBarraDesplazamiento = new JMenuItem("Documento con Barra de Desplazamiento");
+        menuItemTextEditorConListing = new JMenuItem("Editor de Texto con Listado");
 
 
         menuArchivo.add(menuItemEditor);
@@ -45,6 +46,8 @@ public class MAIN extends JFrame {
         menuHerramientas.add(menuItemAgenda);
         menuHerramientas.add(menuItemBusquedaPalabras);
         menuHerramientas.add(menuItemDocConBarraDesplazamiento);
+        menuHerramientas.add(menuItemTextEditorConListing);
+
 
         menuBar.add(menuArchivo);
         menuBar.add(menuHerramientas);
@@ -73,6 +76,11 @@ public class MAIN extends JFrame {
         menuItemDocConBarraDesplazamiento.addActionListener(e -> {
             DocumentoConBarraDeDesplazamiento documento = new DocumentoConBarraDeDesplazamiento();
             documento.setVisible(true);
+        });
+
+        menuItemTextEditorConListing.addActionListener(e -> {
+            TextEditorConListing editorConListado = new TextEditorConListing();
+            editorConListado.setVisible(true);
         });
     }
 
