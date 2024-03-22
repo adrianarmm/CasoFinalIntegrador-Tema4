@@ -82,18 +82,14 @@ public class MAIN extends JFrame {
         });
 
         menuItemDocConBarraDesplazamiento.addActionListener(e -> {
-            DocumentoConBarraDeDesplazamiento documento = new DocumentoConBarraDeDesplazamiento();
-            documento.setVisible(true);
+
         });
 
         menuItemTextEditorConListing.addActionListener(e -> {
-            TextEditorConListing editorConListado = new TextEditorConListing();
-            editorConListado.setVisible(true);
+
         });
 
         menuItemSeguimientoRaton.addActionListener(e -> {
-            SeguimientoRaton seguimientoRaton = new SeguimientoRaton();
-            seguimientoRaton.setVisible(true);
         });
     }
 
