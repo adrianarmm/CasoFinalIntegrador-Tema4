@@ -1,10 +1,5 @@
-
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
@@ -23,13 +18,17 @@ public class MAIN extends JFrame {
 
         menuBar = new JMenuBar();
 
-
         menuArchivo = new JMenu("Archivo");
         menuHerramientas = new JMenu("Herramientas");
 
-        menuItemEditor = new JMenuItem("Editor de Texto");
-        menuItemDibujo = new JMenuItem("Herramienta de Dibujo");
-        menuItemValidadorEmail = new JMenuItem("Validador de Email");
+        // Cargar y escalar iconos
+        ImageIcon iconoEditor = new ImageIcon(escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 20, 20));
+        ImageIcon iconoDibujo = new ImageIcon(escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/computadora.png"), 20, 20));
+        ImageIcon iconoEmail = new ImageIcon(escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/email.png"), 20, 20));
+
+        menuItemEditor = new JMenuItem("Editor de Texto", iconoEditor);
+        menuItemDibujo = new JMenuItem("Herramienta de Dibujo", iconoDibujo);
+        menuItemValidadorEmail = new JMenuItem("Validador de Email", iconoEmail);
 
         menuArchivo.add(menuItemEditor);
         menuHerramientas.add(menuItemDibujo);
@@ -40,47 +39,16 @@ public class MAIN extends JFrame {
 
         setJMenuBar(menuBar);
 
-        menuItemEditor.addActionListener(e -> {
-            JOptionPane.showMessageDialog(this, "Funcionalidad del editor de texto aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE);
-        });
+        menuItemEditor.addActionListener(e -> JOptionPane.showMessageDialog(this, "Funcionalidad del editor de texto aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE));
+        menuItemDibujo.addActionListener(e -> JOptionPane.showMessageDialog(this, "Funcionalidad de dibujo aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE));
+        menuItemValidadorEmail.addActionListener(e -> JOptionPane.showMessageDialog(this, "Funcionalidad de validación de email aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE));
+    }
 
-        menuItemDibujo.addActionListener(e -> {
-            JOptionPane.showMessageDialog(this, "Funcionalidad de dibujo aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE);
-        });
-
-        menuItemValidadorEmail.addActionListener(e -> {
-            JOptionPane.showMessageDialog(this, "Funcionalidad de validación de email aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE);
-        });
-
-
-
-
-        // Listeners para los items del menú
-        menuItemEditor.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // Aquí se llamaría a la funcionalidad del editor de texto
-            }
-        });
-
-        menuItemDibujo.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // Aquí se llamaría a la funcionalidad de dibujo
-            }
-        });
-
-        menuItemValidadorEmail.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // Aquí se llamaría a la funcionalidad de validación de email
-            }
-        });
+    private Image escalarImagen(ImageIcon iconoOriginal, int anchoDeseado, int altoDeseado) {
+        return iconoOriginal.getImage().getScaledInstance(anchoDeseado, altoDeseado, Image.SCALE_SMOOTH);
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new MAIN().setVisible(true);
-        });
+        SwingUtilities.invokeLater(() -> new MAIN().setVisible(true));
     }
 }
