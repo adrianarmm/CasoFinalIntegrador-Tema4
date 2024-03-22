@@ -21,10 +21,10 @@ public class MAIN extends JFrame {
         menuArchivo = new JMenu("Archivo");
         menuHerramientas = new JMenu("Herramientas");
 
-        ImageIcon iconoEditor = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 20, 20);
-        ImageIcon iconoDibujo = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/computadora.png"), 20, 20);
-        ImageIcon iconoEmail = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/email.png"), 20, 20);
-        ImageIcon iconoAgenda = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png"), 20, 20);
+        ImageIcon iconoEditorOriginal = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 20, 20);
+        ImageIcon iconoDibujoOriginal = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/computadora.png"), 20, 20);
+        ImageIcon iconoEmailOriginal = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/email.png"), 20, 20);
+        ImageIcon iconoAgendaOriginal = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png"), 20, 20);
 
 
         menuItemEditor = new JMenuItem("Editor de Texto");
