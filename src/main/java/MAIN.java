@@ -6,7 +6,7 @@ import java.io.IOException;
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
     private JMenu menuArchivo, menuHerramientas;
-    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento, menuItemTextEditorConListing;
+    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento, menuItemTextEditorConListing, menuItemSeguimientoRaton;
 
     public MAIN() {
         inicializarUI();
@@ -47,6 +47,7 @@ public class MAIN extends JFrame {
         menuHerramientas.add(menuItemBusquedaPalabras);
         menuHerramientas.add(menuItemDocConBarraDesplazamiento);
         menuHerramientas.add(menuItemTextEditorConListing);
+        menuItemSeguimientoRaton = new JMenuItem("Seguimiento del Ratón");
 
 
         menuBar.add(menuArchivo);
@@ -81,6 +82,11 @@ public class MAIN extends JFrame {
         menuItemTextEditorConListing.addActionListener(e -> {
             TextEditorConListing editorConListado = new TextEditorConListing();
             editorConListado.setVisible(true);
+        });
+
+        menuItemSeguimientoRaton.addActionListener(e -> {
+            SeguimientoRaton seguimientoRaton = new SeguimientoRaton();
+            seguimientoRaton.setVisible(true);
         });
     }
 
@@ -130,7 +136,10 @@ public class MAIN extends JFrame {
             }
         }
     }
-
+    private void abrirSeguimientoRaton() {
+        SeguimientoRaton seguimiento = new SeguimientoRaton();
+        seguimiento.setVisible(true);
+    }
 
 public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MAIN().setVisible(true));
