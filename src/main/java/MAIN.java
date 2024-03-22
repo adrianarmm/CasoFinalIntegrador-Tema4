@@ -50,7 +50,7 @@ public class MAIN extends JFrame {
         });
         menuItemDibujo.addActionListener(e -> new HerramientaDeDibujo().setVisible(true));
 
-        menuItemDibujo.addActionListener(e -> JOptionPane.showMessageDialog(this, "Funcionalidad de dibujo aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE));
+        menuItemDibujo.addActionListener(e -> JOptionPane.showMessageDialog(this, "BIENVENIDO", "Información", JOptionPane.INFORMATION_MESSAGE));
         menuItemValidadorEmail.addActionListener(e -> JOptionPane.showMessageDialog(this, "Funcionalidad de validación de email aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE));
 
         menuItemAgenda.addActionListener(e -> {
