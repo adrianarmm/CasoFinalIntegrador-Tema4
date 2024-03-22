@@ -21,6 +21,12 @@ public class MAIN extends JFrame {
         menuArchivo = new JMenu("Archivo");
         menuHerramientas = new JMenu("Herramientas");
 
+        ImageIcon iconoEditor = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 20, 20);
+        ImageIcon iconoDibujo = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/computadora.png"), 20, 20);
+        ImageIcon iconoEmail = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/email.png"), 20, 20);
+        ImageIcon iconoAgenda = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png"), 20, 20);
+
+
         menuItemEditor = new JMenuItem("Editor de Texto");
         menuItemDibujo = new JMenuItem("Herramienta de Dibujo");
         menuItemValidadorEmail = new JMenuItem("Validador de Email");
@@ -48,6 +54,12 @@ public class MAIN extends JFrame {
             AgendaDeContactos agenda = new AgendaDeContactos(); // Instanciar la agenda de contactos
             agenda.setVisible(true); // Hacer visible la agenda
         });
+    }
+
+    private static ImageIcon escalarImagen(ImageIcon iconoOriginal, int anchoDeseado, int altoDeseado) {
+        Image imagenOriginal = iconoOriginal.getImage();
+        Image imagenEscalada = imagenOriginal.getScaledInstance(anchoDeseado, altoDeseado, Image.SCALE_SMOOTH);
+        return new ImageIcon(imagenEscalada);
     }
 
     public static void main(String[] args) {
