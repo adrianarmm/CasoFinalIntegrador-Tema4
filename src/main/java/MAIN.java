@@ -8,7 +8,9 @@ public class MAIN extends JFrame {
 
     public MAIN() {
         inicializarUI();
+        mostrarMensajeBienvenida(); // Llama al método que muestra el mensaje de bienvenida
     }
+
 
     private void inicializarUI() {
         setTitle("Aplicación Multifuncional");
@@ -72,7 +74,12 @@ public class MAIN extends JFrame {
         return new ImageIcon(imagenEscalada);
     }
 
-    public static void main(String[] args) {
+
+private void mostrarMensajeBienvenida() {
+    JOptionPane.showMessageDialog(this, "Bienvenido, seleccione la opción que quiera.", "Bienvenido", JOptionPane.INFORMATION_MESSAGE);
+}
+
+public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MAIN().setVisible(true));
     }
 }
