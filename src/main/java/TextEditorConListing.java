@@ -22,7 +22,7 @@ public class TextEditorConListing extends JFrame {
         fileList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
         // Asumiendo un directorio fijo para los documentos
-        currentDirectory = new File("./docs");
+        currentDirectory = new File("/Users/adrianareyesmorera/Documents/MENUSTARTASDEQUESO.txt");
         if (currentDirectory.exists()) {
             File[] files = currentDirectory.listFiles((dir, name) -> name.endsWith(".txt"));
             if (files != null) {
