@@ -40,6 +40,21 @@ public class MAIN extends JFrame {
 
         setJMenuBar(menuBar);
 
+        menuItemEditor.addActionListener(e -> {
+            JOptionPane.showMessageDialog(this, "Funcionalidad del editor de texto aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE);
+        });
+
+        menuItemDibujo.addActionListener(e -> {
+            JOptionPane.showMessageDialog(this, "Funcionalidad de dibujo aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE);
+        });
+
+        menuItemValidadorEmail.addActionListener(e -> {
+            JOptionPane.showMessageDialog(this, "Funcionalidad de validación de email aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE);
+        });
+
+
+
+
         // Listeners para los items del menú
         menuItemEditor.addActionListener(new ActionListener() {
             @Override
