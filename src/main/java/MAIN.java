@@ -1,7 +1,10 @@
+package Iconos;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
@@ -20,9 +23,9 @@ public class MAIN extends JFrame {
 
         menuBar = new JMenuBar();
 
-        ImageIcon iconoEditor = new ImageIcon("path/to/editor_icon.png");
-        ImageIcon iconoDibujo = new ImageIcon("path/to/drawing_icon.png");
-        ImageIcon iconoEmail = new ImageIcon("path/to/email_icon.png");
+        ImageIcon iconoEditorOriginal = new ImageIcon("path/to/editor_icon.png");
+        ImageIcon iconoDibujoOriginal = new ImageIcon("path/to/drawing_icon.png");
+        ImageIcon iconoEmailOriginal = new ImageIcon("path/to/email_icon.png");
 
         menuArchivo = new JMenu("Archivo");
         menuHerramientas = new JMenu("Herramientas");
