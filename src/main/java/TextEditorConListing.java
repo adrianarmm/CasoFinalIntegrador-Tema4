@@ -1,7 +1,7 @@
 import javax.swing.*;
-import java.awt.*;
-import java.io.*;
-import javax.swing.event.ListSelectionEvent;
+        import java.awt.*;
+        import java.io.*;
+        import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class TextEditorConListing extends JFrame {
@@ -54,9 +54,12 @@ public class TextEditorConListing extends JFrame {
         }
     }
 
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             new TextEditorConListing().setVisible(true);
         });
+
+
     }
 }
