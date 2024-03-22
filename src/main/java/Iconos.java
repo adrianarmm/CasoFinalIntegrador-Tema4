@@ -18,6 +18,11 @@ public class Iconos {
         ImageIcon iconoEmailOriginal = new ImageIcon("/Users/adrianareyesmorera/Documents/email.png");
         ImageIcon iconoEmailEscalado = escalarImagen(iconoEmailOriginal, 50, 50); // Ajusta el tamaño deseado aquí
         JOptionPane.showMessageDialog(null, "Icono de email", "Icono", JOptionPane.INFORMATION_MESSAGE, iconoEmailEscalado);
+
+        // Escalar y mostrar el icono de agenda
+        ImageIcon iconoAgendaOriginal = new ImageIcon("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png");
+        ImageIcon iconoAgendaEscalado = escalarImagen(iconoAgendaOriginal, 50, 50); // Ajusta el tamaño deseado aquí
+        JOptionPane.showMessageDialog(null, "Icono de agenda", "Icono", JOptionPane.INFORMATION_MESSAGE, iconoAgendaEscalado);
     }
 
     // Método auxiliar para escalar la imagen
