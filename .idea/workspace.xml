@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="56" />
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="59">
+      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,31 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
       <workItem from="1710959254866" duration="2987000" />
-      <workItem from="1711107653751" duration="3188000" />
-    </task>
-    <task id="LOCAL-00009" summary="10">
-      <option name="closed" value="true" />
-      <created>1710960034615</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1710960034615</updated>
-    </task>
-    <task id="LOCAL-00010" summary="11">
-      <option name="closed" value="true" />
-      <created>1710960094107</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1710960094107</updated>
-    </task>
-    <task id="LOCAL-00011" summary="12">
-      <option name="closed" value="true" />
-      <created>1710960136441</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1710960136441</updated>
+      <workItem from="1711107653751" duration="3509000" />
     </task>
     <task id="LOCAL-00012" summary="13">
       <option name="closed" value="true" />
@@ -470,16 +448,37 @@
       <option name="project" value="LOCAL" />
       <updated>1711134239568</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="57">
+      <option name="closed" value="true" />
+      <created>1711134373521</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1711134373521</updated>
+    </task>
+    <task id="LOCAL-00059" summary="58">
+      <option name="closed" value="true" />
+      <created>1711134437287</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1711134437287</updated>
+    </task>
+    <task id="LOCAL-00060" summary="59">
+      <option name="closed" value="true" />
+      <created>1711134460647</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1711134460647</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="33" />
-    <MESSAGE value="34" />
-    <MESSAGE value="35" />
     <MESSAGE value="36" />
     <MESSAGE value="37" />
     <MESSAGE value="38&#10;CODIGO LISTO, el codigo esta bien tengo que retocar y añadir los directorios y mas cosas" />
@@ -502,6 +501,9 @@
     <MESSAGE value="54" />
     <MESSAGE value="55" />
     <MESSAGE value="56" />
-    <option name="LAST_COMMIT_MESSAGE" value="56" />
+    <MESSAGE value="57" />
+    <MESSAGE value="58" />
+    <MESSAGE value="59" />
+    <option name="LAST_COMMIT_MESSAGE" value="59" />
   </component>
 </project>

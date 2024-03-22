@@ -21,16 +21,16 @@ public class MAIN extends JFrame {
         menuArchivo = new JMenu("Archivo");
         menuHerramientas = new JMenu("Herramientas");
 
-        ImageIcon iconoEditorOriginal = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 30, 30);
-        ImageIcon iconoDibujoOriginal = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/computadora.png"), 30, 30);
-        ImageIcon iconoEmailOriginal = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Documents/email.png"), 30, 30);
-        ImageIcon iconoAgendaOriginal = escalarImagen(new ImageIcon("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png"), 30, 30);
+        // Intenta cargar los iconos
+        ImageIcon iconoEditor = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 30, 30);
+        ImageIcon iconoDibujo = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/computadora.png"), 30, 30);
+        ImageIcon iconoEmail = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/email.png"), 30, 30);
+        ImageIcon iconoAgenda = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png"), 30, 30);
 
-
-        menuItemEditor = new JMenuItem("Editor de Texto");
-        menuItemDibujo = new JMenuItem("Herramienta de Dibujo");
-        menuItemValidadorEmail = new JMenuItem("Validador de Email");
-        menuItemAgenda = new JMenuItem("Agenda de Contactos"); // Nuevo ítem de menú para la agenda
+        menuItemEditor = new JMenuItem("Editor de Texto", iconoEditor);
+        menuItemDibujo = new JMenuItem("Herramienta de Dibujo", iconoDibujo);
+        menuItemValidadorEmail = new JMenuItem("Validador de Email", iconoEmail);
+        menuItemAgenda = new JMenuItem("Agenda de Contactos", iconoAgenda);
 
         menuArchivo.add(menuItemEditor);
         menuHerramientas.add(menuItemDibujo);
@@ -51,12 +51,22 @@ public class MAIN extends JFrame {
         menuItemValidadorEmail.addActionListener(e -> JOptionPane.showMessageDialog(this, "Funcionalidad de validación de email aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE));
 
         menuItemAgenda.addActionListener(e -> {
-            AgendaDeContactos agenda = new AgendaDeContactos(); // Instanciar la agenda de contactos
-            agenda.setVisible(true); // Hacer visible la agenda
+            AgendaDeContactos agenda = new AgendaDeContactos();
+            agenda.setVisible(true);
         });
     }
 
+    private ImageIcon cargarIcono(String ruta) {
+        ImageIcon icono = new ImageIcon(ruta);
+        if (icono.getIconWidth() == -1) {
+            JOptionPane.showMessageDialog(this, "No se pudo cargar el icono: " + ruta, "Error", JOptionPane.ERROR_MESSAGE);
+            return null;
+        }
+        return icono;
+    }
+
     private static ImageIcon escalarImagen(ImageIcon iconoOriginal, int anchoDeseado, int altoDeseado) {
+        if (iconoOriginal == null) return null;
         Image imagenOriginal = iconoOriginal.getImage();
         Image imagenEscalada = imagenOriginal.getScaledInstance(anchoDeseado, altoDeseado, Image.SCALE_SMOOTH);
         return new ImageIcon(imagenEscalada);
