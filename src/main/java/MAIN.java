@@ -38,7 +38,7 @@ public class MAIN extends JFrame {
         menuItemBusquedaPalabras = new JMenuItem("Búsqueda de Palabras");
         menuItemDocConBarraDesplazamiento = new JMenuItem("Documento con Barra de Desplazamiento");
         menuItemTextEditorConListing = new JMenuItem("Editor de Texto con Listado");
-
+        menuItemSeguimientoRaton = new JMenuItem("Seguimiento del Ratón");
 
         menuArchivo.add(menuItemEditor);
         menuHerramientas.add(menuItemDibujo);
@@ -47,7 +47,8 @@ public class MAIN extends JFrame {
         menuHerramientas.add(menuItemBusquedaPalabras);
         menuHerramientas.add(menuItemDocConBarraDesplazamiento);
         menuHerramientas.add(menuItemTextEditorConListing);
-        menuItemSeguimientoRaton = new JMenuItem("Seguimiento del Ratón");
+        menuHerramientas.add(menuItemSeguimientoRaton);
+
 
 
         menuBar.add(menuArchivo);
