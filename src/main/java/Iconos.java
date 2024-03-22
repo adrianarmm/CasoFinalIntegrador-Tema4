@@ -1,4 +1,4 @@
-package Iconos;
+package iconos;
 import javax.swing.*;
 import java.awt.*;
 
