@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="40 prueba trabaj0">
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="45">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Iconos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Iconos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/MAIN.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -74,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
       <workItem from="1710959254866" duration="2987000" />
-      <workItem from="1711107653751" duration="616000" />
+      <workItem from="1711107653751" duration="1468000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <option name="closed" value="true" />
@@ -396,18 +400,53 @@
       <option name="project" value="LOCAL" />
       <updated>1710961529897</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="41 arreglos main">
+      <option name="closed" value="true" />
+      <created>1711131830455</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1711131830455</updated>
+    </task>
+    <task id="LOCAL-00042" summary="42 arreglos main">
+      <option name="closed" value="true" />
+      <created>1711131899668</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1711131899668</updated>
+    </task>
+    <task id="LOCAL-00043" summary="43 clase Iconos">
+      <option name="closed" value="true" />
+      <created>1711132037451</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1711132037451</updated>
+    </task>
+    <task id="LOCAL-00044" summary="44">
+      <option name="closed" value="true" />
+      <created>1711132113153</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1711132113153</updated>
+    </task>
+    <task id="LOCAL-00045" summary="45">
+      <option name="closed" value="true" />
+      <created>1711132144231</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1711132144231</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="16" />
-    <MESSAGE value="17" />
-    <MESSAGE value="18" />
-    <MESSAGE value="19" />
-    <MESSAGE value="20" />
     <MESSAGE value="21" />
     <MESSAGE value="22" />
     <MESSAGE value="23" />
@@ -428,6 +467,11 @@
     <MESSAGE value="38&#10;CODIGO LISTO, el codigo esta bien tengo que retocar y añadir los directorios y mas cosas" />
     <MESSAGE value="39 MAIN" />
     <MESSAGE value="40 prueba trabaj0" />
-    <option name="LAST_COMMIT_MESSAGE" value="40 prueba trabaj0" />
+    <MESSAGE value="41 arreglos main" />
+    <MESSAGE value="42 arreglos main" />
+    <MESSAGE value="43 clase Iconos" />
+    <MESSAGE value="44" />
+    <MESSAGE value="45" />
+    <option name="LAST_COMMIT_MESSAGE" value="45" />
   </component>
 </project>
