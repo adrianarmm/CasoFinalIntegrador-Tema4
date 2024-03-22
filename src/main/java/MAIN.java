@@ -29,7 +29,7 @@ public class MAIN extends JFrame {
         menuArchivo.add(menuItemEditor);
         menuHerramientas.add(menuItemDibujo);
         menuHerramientas.add(menuItemValidadorEmail);
-        menuHerramientas.add(menuItemAgenda); // Añadir la agenda al menú Herramientas
+        menuHerramientas.add(menuItemAgenda);
 
         menuBar.add(menuArchivo);
         menuBar.add(menuHerramientas);
