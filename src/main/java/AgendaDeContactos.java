@@ -31,8 +31,8 @@ public class AgendaDeContactos extends JFrame {
         });
 
         add(new JLabel("Nombre:"));
-        add(txtNombre);
         add(new JLabel("Apellidos:"));
+        add(txtNombre);
         add(new JLabel("Email:"));
         add(txtEmail);
         add(new JLabel("Teléfono:"));
