@@ -4,7 +4,7 @@ import java.awt.event.*;
 import java.util.ArrayList;
 
 public class AgendaDeContactos extends JFrame {
-    private JTextField txtNombre, txtEmail, txtTelefono;
+    private JTextField txtNombre, txtEmail, txtTelefono, txtApellidos;
     private JButton btnAgregar;
     private JList<Contacto> listaContactos;
     private DefaultListModel<Contacto> modeloLista;
@@ -32,6 +32,8 @@ public class AgendaDeContactos extends JFrame {
 
         add(new JLabel("Nombre:"));
         add(txtNombre);
+        add(new JLabel("Apellidos:"));
+        add(txtApellidos);
         add(new JLabel("Email:"));
         add(txtEmail);
         add(new JLabel("Teléfono:"));
@@ -48,6 +50,7 @@ public class AgendaDeContactos extends JFrame {
         String nombre = txtNombre.getText();
         String email = txtEmail.getText();
         String telefono = txtTelefono.getText();
+        String apellidos = txtApellidos.getText();
 
         Contacto nuevoContacto = new Contacto(nombre, email, telefono);
         contactos.add(nuevoContacto);
@@ -56,6 +59,7 @@ public class AgendaDeContactos extends JFrame {
         txtNombre.setText("");
         txtEmail.setText("");
         txtTelefono.setText("");
+        txtApellidos.setText("");
     }
 
     public static void main(String[] args) {
