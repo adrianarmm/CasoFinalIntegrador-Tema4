@@ -30,6 +30,12 @@ public class MAIN extends JFrame {
         ImageIcon iconoDibujo = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/computadora.png"), 30, 30);
         ImageIcon iconoEmail = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/email.png"), 30, 30);
         ImageIcon iconoAgenda = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png"), 30, 30);
+        ImageIcon iconoBusqueda = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/busqueda-por-palabras.png"), 30, 30);
+        ImageIcon iconoDocConBarraDesplazamiento = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/desplacese-hacia-abajo.png"), 30, 30);
+        ImageIcon iconoTextEditorConListing = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/lista-de-texto.png"), 30, 30);
+        ImageIcon iconoSeguimientoRaton = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/bola-de-seguimiento.png"), 30, 30);
+
+
 
         menuItemEditor = new JMenuItem("Editor de Texto", iconoEditor);
         menuItemDibujo = new JMenuItem("Herramienta de Dibujo", iconoDibujo);
@@ -106,7 +112,6 @@ public class MAIN extends JFrame {
         Image imagenEscalada = imagenOriginal.getScaledInstance(anchoDeseado, altoDeseado, Image.SCALE_SMOOTH);
         return new ImageIcon(imagenEscalada);
     }
-
 
     private void mostrarMensajeBienvenida() {
     JOptionPane.showMessageDialog(this, "Bienvenido, seleccione la opción que quiera.", "Bienvenido", JOptionPane.INFORMATION_MESSAGE);
