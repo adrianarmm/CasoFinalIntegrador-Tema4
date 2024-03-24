@@ -40,10 +40,10 @@ public class MAIN extends JFrame {
         menuItemDibujo = new JMenuItem("Herramienta de Dibujo", iconoDibujo);
         menuItemValidadorEmail = new JMenuItem("Validador de Email", iconoEmail);
         menuItemAgenda = new JMenuItem("Agenda de Contactos", iconoAgenda);
-        menuItemBusquedaPalabras = new JMenuItem("Búsqueda de Palabras");
-        menuItemDocConBarraDesplazamiento = new JMenuItem("Documento con Barra de Desplazamiento");
-        menuItemTextEditorConListing = new JMenuItem("Editor de Texto con Listado");
-        menuItemSeguimientoRaton = new JMenuItem("Seguimiento del Ratón");
+        menuItemBusquedaPalabras = new JMenuItem("Búsqueda de Palabras", iconoBusquedaPalabras);
+        menuItemDocConBarraDesplazamiento = new JMenuItem("Documento con Barra de Desplazamiento", iconoDocConBarraDesplazamiento);
+        menuItemTextEditorConListing = new JMenuItem("Editor de Texto con Listado", iconoTextEditorConListing);
+        menuItemSeguimientoRaton = new JMenuItem("Seguimiento del Ratón", iconoSeguimientoRaton);
 
         menuArchivo.add(menuItemEditor);
         menuHerramientas.add(menuItemDibujo);
