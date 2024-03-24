@@ -25,7 +25,7 @@ public class Iconos {
         JOptionPane.showMessageDialog(null, "Icono de agenda", "Icono", JOptionPane.INFORMATION_MESSAGE, iconoAgendaEscalado);
 
         // Escalar y mostrar el icono de busqueda de palabras
-        ImageIcon iconoBusquedaPalabrasOriginal = new ImageIcon("/Users/adrianareyesmorera/Downloads/busqueda-por-palabras.png");
+        ImageIcon iconoBusquedaPalabrasOriginal = new ImageIcon("/Users/adrianareyesmorera/Downloads/busqueda-por-palabra-clave.png");
         ImageIcon iconoBusquedaPalabrasEscalado = escalarImagen(iconoBusquedaPalabrasOriginal, 50, 50); // Ajusta el tamaño deseado aquí
         JOptionPane.showMessageDialog(null, "Icono de búsqueda de palabras", "Icono", JOptionPane.INFORMATION_MESSAGE, iconoBusquedaPalabrasEscalado);
 
