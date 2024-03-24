@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="81">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="82">
       <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,15 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
       <workItem from="1710959254866" duration="2987000" />
-      <workItem from="1711107653751" duration="9474000" />
-    </task>
-    <task id="LOCAL-00035" summary="35">
-      <option name="closed" value="true" />
-      <created>1710961062300</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1710961062300</updated>
+      <workItem from="1711107653751" duration="9996000" />
     </task>
     <task id="LOCAL-00036" summary="36">
       <option name="closed" value="true" />
@@ -473,14 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1711303290894</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="82">
+      <option name="closed" value="true" />
+      <created>1711303914317</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1711303914317</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="55" />
     <MESSAGE value="56" />
     <MESSAGE value="57" />
     <MESSAGE value="58" />
@@ -505,6 +503,7 @@
     <MESSAGE value="78" />
     <MESSAGE value="80" />
     <MESSAGE value="81" />
-    <option name="LAST_COMMIT_MESSAGE" value="81" />
+    <MESSAGE value="82" />
+    <option name="LAST_COMMIT_MESSAGE" value="82" />
   </component>
 </project>

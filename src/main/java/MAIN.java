@@ -25,6 +25,14 @@ public class MAIN extends JFrame {
         menuHerramientas = new JMenu("Herramientas");
 
         // Intenta cargar los iconos
+        ImageIcon iconoEditor = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 30, 30);
+        ImageIcon iconoDibujo = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/computadora.png"), 30, 30);
+        ImageIcon iconoEmail = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/email.png"), 30, 30);
+        ImageIcon iconoAgenda = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png"), 30, 30);
+        ImageIcon iconoBusquedaPalabras = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/busqueda-por-palabra-clave.png"), 30, 30);
+        ImageIcon iconoDocConBarraDesplazamiento = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/doc-con-barra.png"), 30, 30);
+        ImageIcon iconoTextEditorConListing = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/text-editor-listing.png"), 30, 30);
+        ImageIcon iconoSeguimientoRaton = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/seguimiento-raton.png"), 30, 30);
 
 
 
@@ -105,31 +113,7 @@ public class MAIN extends JFrame {
     JOptionPane.showMessageDialog(this, "Bienvenido, seleccione la opción que quiera.", "Bienvenido", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    private void realizarBusquedaPalabras() {
-        JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setCurrentDirectory(new File(System.getProperty("/Users/adrianareyesmorera/Documents/MENUSTARTASDEQUESO.txt")));
-        int result = fileChooser.showOpenDialog(this);
 
-        if (result == JFileChooser.APPROVE_OPTION) {
-            File selectedFile = fileChooser.getSelectedFile();
-
-            String searchWord = JOptionPane.showInputDialog(this, "Ingrese la palabra a buscar:");
-
-            if (searchWord != null && !searchWord.isEmpty()) {
-                try {
-                    int occurrences = BusquedaPalabras.countBusquedaPalabras(selectedFile, searchWord);
-                    JOptionPane.showMessageDialog(this, "La palabra \"" + searchWord + "\" aparece " + occurrences + " veces en el documento.",
-                            "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
-                } catch (IOException ex) {
-                    JOptionPane.showMessageDialog(this, "Ocurrió un error al leer el archivo: " + ex.getMessage(),
-                            "Error", JOptionPane.ERROR_MESSAGE);
-                }
-            } else {
-                JOptionPane.showMessageDialog(this, "Debe ingresar una palabra para buscar.",
-                        "Advertencia", JOptionPane.WARNING_MESSAGE);
-            }
-        }
-    }
     private void abrirSeguimientoRaton() {
         SeguimientoRaton seguimiento = new SeguimientoRaton();
         seguimiento.setVisible(true);
