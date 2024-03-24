@@ -108,7 +108,7 @@ public class MAIN extends JFrame {
 
     private void realizarBusquedaPalabras() {
         JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setCurrentDirectory(new File(System.getProperty("/Users/adrianareyesmorera/Downloads"))); // Verifica el directorio inicial.
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home"))); // Verifica el directorio inicial.
         int result = fileChooser.showOpenDialog(this);
 
         if (result == JFileChooser.APPROVE_OPTION) {
