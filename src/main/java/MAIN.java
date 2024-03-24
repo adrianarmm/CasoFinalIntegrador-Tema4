@@ -106,7 +106,7 @@ public class MAIN extends JFrame {
     }
 
 
-    private void BusquedaPalabras() {
+    private void realizarBusquedaPalabras() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("/Users/adrianareyesmorera/Downloads"))); // Verifica el directorio inicial.
         int result = fileChooser.showOpenDialog(this);
@@ -121,6 +121,7 @@ public class MAIN extends JFrame {
                             "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
                 } catch (IOException ex) {
                     JOptionPane.showMessageDialog(this, "Error al leer el archivo: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+
                 }
             }
         }
