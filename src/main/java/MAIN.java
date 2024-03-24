@@ -106,6 +106,27 @@ public class MAIN extends JFrame {
     }
 
 
+    private void realizarBusquedaPalabras() {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home"))); // Verifica el directorio inicial.
+        int result = fileChooser.showOpenDialog(this);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            String searchWord = JOptionPane.showInputDialog(this, "Ingrese la palabra a buscar:");
+            if (searchWord != null && !searchWord.isEmpty()) {
+                try {
+                    int occurrences = BusquedaPalabras.countBusquedaPalabras(selectedFile, searchWord);
+                    JOptionPane.showMessageDialog(this, "La palabra \"" + searchWord + "\" aparece " + occurrences + " veces.",
+                            "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
+                } catch (IOException ex) {
+                    JOptionPane.showMessageDialog(this, "Error al leer el archivo: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
+    }
+
+
 
 
     private static ImageIcon escalarImagen(ImageIcon iconoOriginal, int anchoDeseado, int altoDeseado) {
