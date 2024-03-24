@@ -21,19 +21,10 @@ public class MAIN extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         menuBar = new JMenuBar();
-
         menuArchivo = new JMenu("Archivo");
         menuHerramientas = new JMenu("Herramientas");
 
         // Intenta cargar los iconos
-        ImageIcon iconoEditor = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 30, 30);
-        ImageIcon iconoDibujo = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/computadora.png"), 30, 30);
-        ImageIcon iconoEmail = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/email.png"), 30, 30);
-        ImageIcon iconoAgenda = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png"), 30, 30);
-        ImageIcon iconoBusqueda = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/busqueda-por-palabra-clave.png"), 30, 30);
-        ImageIcon iconoDocConBarraDesplazamiento = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/desplacese-hacia-abajo.png"), 30, 30);
-        ImageIcon iconoTextEditorConListing = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/lista-de-texto.png"), 30, 30);
-        ImageIcon iconoSeguimientoRaton = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/bola-de-seguimiento.png"), 30, 30);
 
 
 
@@ -143,6 +134,8 @@ public class MAIN extends JFrame {
         SeguimientoRaton seguimiento = new SeguimientoRaton();
         seguimiento.setVisible(true);
     }
+
+
 
 public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MAIN().setVisible(true));
