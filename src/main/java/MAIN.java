@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
+import java.util.HashMap;
 
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
@@ -105,25 +107,31 @@ public class MAIN extends JFrame {
         return icono;
     }
 
-
     private void realizarBusquedaPalabras() {
         JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home"))); // Verifica el directorio inicial.
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
         int result = fileChooser.showOpenDialog(this);
 
         if (result == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-            String searchWord = JOptionPane.showInputDialog(this, "Ingrese la palabra a buscar:");
-            if (searchWord != null && !searchWord.isEmpty()) {
-                try {
-                    int occurrences = BusquedaPalabras.countBusquedaPalabras(selectedFile, searchWord);
-                    JOptionPane.showMessageDialog(this, "La palabra \"" + searchWord + "\" aparece " + occurrences + " veces.",
-                            "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
-                } catch (IOException ex) {
-                    JOptionPane.showMessageDialog(this, "Error al leer el archivo: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            System.out.println("Archivo seleccionado: " + selectedFile.getAbsolutePath()); // Para depuración
+            try {
+                Map<String, Integer> wordFrequency = TextAnalysisTool.analyzeText(selectedFile);
+                StringBuilder results = new StringBuilder();
+                wordFrequency.forEach((word, frequency) -> results.append(word).append(": ").append(frequency).append("\n"));
 
-                }
+                System.out.println("Resultados:\n" + results); // Para depuración
+
+                JTextArea textArea = new JTextArea(20, 30);
+                textArea.setText(results.toString());
+                textArea.setEditable(false);
+                JScrollPane scrollPane = new JScrollPane(textArea);
+                JOptionPane.showMessageDialog(null, scrollPane, "Frecuencia de Palabras", JOptionPane.INFORMATION_MESSAGE);
+            } catch (IOException ex) {
+                JOptionPane.showMessageDialog(this, "Error al leer el archivo: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
+        } else {
+            System.out.println("Selección de archivo cancelada."); // Para depuración
         }
     }
 
