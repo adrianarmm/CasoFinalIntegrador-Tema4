@@ -26,7 +26,7 @@ public class TextAnalysisTool {
     }
 
     public static void main(String[] args) {
-        File file = new File("ruta/al/archivo.txt");
+        File file = new File("/Users/adrianareyesmorera/Documents/TARTAS-QUESO.txt");
 
         try {
             Map<String, Integer> wordFrequency = analyzeText(file);
