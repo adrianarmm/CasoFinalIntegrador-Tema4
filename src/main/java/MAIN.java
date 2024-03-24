@@ -76,15 +76,18 @@ public class MAIN extends JFrame {
         });
 
         menuItemBusquedaPalabras.addActionListener(e -> {
-            BusquedaPalabras busqueda = new BusquedaPalabras();
-            busqueda.setVisible(true);
+
         });
 
         menuItemDocConBarraDesplazamiento.addActionListener(e -> {
+            DocumentoConBarraDeDesplazamiento documento = new DocumentoConBarraDeDesplazamiento();
+            documento.setVisible(true);
 
         });
 
         menuItemTextEditorConListing.addActionListener(e -> {
+            TextEditorConListing editorConListado = new TextEditorConListing();
+            editorConListado.setVisible(true);
 
         });
 
@@ -101,6 +104,31 @@ public class MAIN extends JFrame {
         }
         return icono;
     }
+
+    private void realizarBusquedaPalabras() {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+        int result = fileChooser.showOpenDialog(this);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            String searchWord = JOptionPane.showInputDialog(this, "Ingrese la palabra a buscar:");
+            if (searchWord != null && !searchWord.isEmpty()) {
+                try {
+                    // Asume que countBusquedaPalabras es un método estático en la clase BusquedaPalabras
+                    // que retorna el número de veces que aparece la palabra en el archivo.
+                    int occurrences = BusquedaPalabras.countBusquedaPalabras(selectedFile, searchWord);
+                    JOptionPane.showMessageDialog(this, "La palabra \"" + searchWord + "\" aparece " + occurrences + " veces.",
+                            "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
+                } catch (IOException ex) {
+                    JOptionPane.showMessageDialog(this, "Error al leer el archivo: " + ex.getMessage(),
+                            "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
+    }
+
+
 
     private static ImageIcon escalarImagen(ImageIcon iconoOriginal, int anchoDeseado, int altoDeseado) {
         if (iconoOriginal == null) return null;
