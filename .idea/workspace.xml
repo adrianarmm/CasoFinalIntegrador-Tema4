@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="84" />
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="85" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,15 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
       <workItem from="1710959254866" duration="2987000" />
-      <workItem from="1711107653751" duration="10348000" />
-    </task>
-    <task id="LOCAL-00038" summary="38&#10;CODIGO LISTO, el codigo esta bien tengo que retocar y añadir los directorios y mas cosas">
-      <option name="closed" value="true" />
-      <created>1710961271207</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1710961271208</updated>
+      <workItem from="1711107653751" duration="10672000" />
     </task>
     <task id="LOCAL-00039" summary="39 MAIN">
       <option name="closed" value="true" />
@@ -470,14 +462,21 @@
       <option name="project" value="LOCAL" />
       <updated>1711304309890</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="85">
+      <option name="closed" value="true" />
+      <created>1711304604120</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1711304604120</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="58" />
     <MESSAGE value="59" />
     <MESSAGE value="60" />
     <MESSAGE value="61" />
@@ -502,6 +501,7 @@
     <MESSAGE value="82" />
     <MESSAGE value="83" />
     <MESSAGE value="84" />
-    <option name="LAST_COMMIT_MESSAGE" value="84" />
+    <MESSAGE value="85" />
+    <option name="LAST_COMMIT_MESSAGE" value="85" />
   </component>
 </project>
