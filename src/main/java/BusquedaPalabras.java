@@ -34,7 +34,7 @@ public class BusquedaPalabras {
 
     public static void main(String[] args) {
         File file = new File("/Users/adrianareyesmorera/Documents/MENUSTARTASDEQUESO.txt");
-        String searchWord = "ejemplo"; // La palabra que quieres buscar en el documento.
+        String searchWord = "Tarta"; // La palabra que quieres buscar en el documento.
 
         try {
             int occurrences = countBusquedaPalabras(file, searchWord);
@@ -45,7 +45,6 @@ public class BusquedaPalabras {
     }
 
 
-    public void setVisible(boolean b) {
-    }
+
 }
 
