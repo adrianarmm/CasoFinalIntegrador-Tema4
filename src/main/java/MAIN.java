@@ -75,9 +75,9 @@ public class MAIN extends JFrame {
             agenda.setVisible(true);
         });
 
-        menuItemBusquedaPalabras.addActionListener(e -> {
-
-        });
+        menuItemBusquedaPalabras.addActionListener(e -> realizarBusquedaPalabras());
+    {
+        };
 
         menuItemDocConBarraDesplazamiento.addActionListener(e -> {
             DocumentoConBarraDeDesplazamiento documento = new DocumentoConBarraDeDesplazamiento();
