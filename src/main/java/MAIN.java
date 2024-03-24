@@ -30,7 +30,7 @@ public class MAIN extends JFrame {
         ImageIcon iconoDibujo = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/computadora.png"), 30, 30);
         ImageIcon iconoEmail = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/email.png"), 30, 30);
         ImageIcon iconoAgenda = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/agenda-de-contactos.png"), 30, 30);
-        ImageIcon iconoBusqueda = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/busqueda-por-palabras.png"), 30, 30);
+        ImageIcon iconoBusqueda = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/busqueda-por-palabra-clave.png"), 30, 30);
         ImageIcon iconoDocConBarraDesplazamiento = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/desplacese-hacia-abajo.png"), 30, 30);
         ImageIcon iconoTextEditorConListing = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/lista-de-texto.png"), 30, 30);
         ImageIcon iconoSeguimientoRaton = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/bola-de-seguimiento.png"), 30, 30);
