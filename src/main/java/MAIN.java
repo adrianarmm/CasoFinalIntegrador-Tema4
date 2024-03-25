@@ -170,7 +170,7 @@ public class MAIN extends JFrame {
         seguimiento.setVisible(true);
     }
 
-    private void
+
 
 
 
