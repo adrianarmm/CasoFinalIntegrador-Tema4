@@ -15,6 +15,8 @@ public class MAIN extends JFrame {
         mostrarMensajeBienvenida(); // Llama al método que muestra el mensaje de bienvenida
     }
 
+
+
     private void inicializarUI() {
         setTitle("Aplicación Multifuncional");
         setSize(800, 600);
@@ -48,6 +50,11 @@ public class MAIN extends JFrame {
         menuItemTextEditorConListing = new JMenuItem("Editor de Texto con Listado", iconoTextEditorConListing);
         menuItemSeguimientoRaton = new JMenuItem("Seguimiento del Ratón", iconoSeguimientoRaton);
         menuItemTextEditor = new JMenuItem("Editor de Texto", iconoTextEditor);
+
+        menuItemEditor.setBackground(new Color(70, 130, 180)); // Un tono de azul acero
+        menuItemEditor.setForeground(Color.WHITE); // Texto en blanco
+        menuItemEditor.setFont(new Font("Roboto", Font.BOLD, 14));
+
 
         menuArchivo.add(menuItemEditor);
         menuHerramientas.add(menuItemDibujo);
