@@ -42,7 +42,7 @@ public class MAIN extends JFrame {
 
 
 
-        menuItemEditor = new JMenuItem("Editor de Texto", iconoEditor);
+        menuItemEditor = new JMenuItem("Block de Notas", iconoEditor);
         menuItemDibujo = new JMenuItem("Herramienta de Dibujo", iconoDibujo);
         menuItemValidadorEmail = new JMenuItem("Validador de Email", iconoEmail);
         menuItemAgenda = new JMenuItem("Agenda de Contactos", iconoAgenda);
