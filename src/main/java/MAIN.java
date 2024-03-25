@@ -15,9 +15,6 @@ public class MAIN extends JFrame {
         mostrarMensajeBienvenida(); // Llama al método que muestra el mensaje de bienvenida
     }
 
-
-
-
     private void inicializarUI() {
         setTitle("Aplicación Multifuncional");
         setSize(800, 600);
@@ -76,7 +73,12 @@ public class MAIN extends JFrame {
         menuItemDibujo.addActionListener(e -> new HerramientaDeDibujo().setVisible(true));
 
         menuItemDibujo.addActionListener(e -> JOptionPane.showMessageDialog(this, "BIENVENIDO", "Información", JOptionPane.INFORMATION_MESSAGE));
-        menuItemValidadorEmail.addActionListener(e -> JOptionPane.showMessageDialog(this, "Funcionalidad de validación de email aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE));
+        menuItemValidadorEmail.addActionListener(e -> {
+            ValidadorEmail validador = new ValidadorEmail();
+            validador.setVisible(true);
+        });
+
+
 
         menuItemAgenda.addActionListener(e -> {
             AgendaDeContactos agenda = new AgendaDeContactos();
@@ -107,6 +109,8 @@ public class MAIN extends JFrame {
             TextEditor textEditor = new TextEditor();
             textEditor.setVisible(true);
         });
+
+
     }
 
     private ImageIcon cargarIcono(String ruta) {
@@ -165,6 +169,8 @@ public class MAIN extends JFrame {
         SeguimientoRaton seguimiento = new SeguimientoRaton();
         seguimiento.setVisible(true);
     }
+
+    private void
 
 
 
