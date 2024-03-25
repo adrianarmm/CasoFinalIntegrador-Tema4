@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
     private JMenu menuArchivo, menuHerramientas;
-    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento, menuItemTextEditorConListing, menuItemSeguimientoRaton;
+    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento, menuItemTextEditorConListing, menuItemSeguimientoRaton, menuItemTextEditor;
 
     public MAIN() {
         inicializarUI();
@@ -16,11 +16,14 @@ public class MAIN extends JFrame {
     }
 
 
+
+
     private void inicializarUI() {
         setTitle("Aplicación Multifuncional");
         setSize(800, 600);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 
         menuBar = new JMenuBar();
         menuArchivo = new JMenu("Archivo");
@@ -35,6 +38,7 @@ public class MAIN extends JFrame {
         ImageIcon iconoDocConBarraDesplazamiento = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/desplacese-hacia-abajo.png"), 30, 30);
         ImageIcon iconoTextEditorConListing = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/lista-de-texto.png"), 30, 30);
         ImageIcon iconoSeguimientoRaton = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/bola-de-seguimiento.png"), 30, 30);
+        ImageIcon iconoTextEditor = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Downloads/editor-de-texto.png"), 30, 30);
 
 
 
@@ -46,6 +50,7 @@ public class MAIN extends JFrame {
         menuItemDocConBarraDesplazamiento = new JMenuItem("Documento con Barra de Desplazamiento", iconoDocConBarraDesplazamiento);
         menuItemTextEditorConListing = new JMenuItem("Editor de Texto con Listado", iconoTextEditorConListing);
         menuItemSeguimientoRaton = new JMenuItem("Seguimiento del Ratón", iconoSeguimientoRaton);
+        menuItemTextEditor = new JMenuItem("Editor de Texto", iconoTextEditor);
 
         menuArchivo.add(menuItemEditor);
         menuHerramientas.add(menuItemDibujo);
@@ -55,6 +60,7 @@ public class MAIN extends JFrame {
         menuHerramientas.add(menuItemDocConBarraDesplazamiento);
         menuHerramientas.add(menuItemTextEditorConListing);
         menuHerramientas.add(menuItemSeguimientoRaton);
+        menuHerramientas.add(menuItemTextEditor);
 
 
 
@@ -95,6 +101,11 @@ public class MAIN extends JFrame {
 
         menuItemSeguimientoRaton.addActionListener(e -> {
             abrirSeguimientoRaton();
+        });
+
+        menuItemTextEditor.addActionListener(e -> {
+            TextEditor textEditor = new TextEditor();
+            textEditor.setVisible(true);
         });
     }
 
