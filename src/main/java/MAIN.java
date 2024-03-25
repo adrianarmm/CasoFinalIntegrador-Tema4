@@ -15,9 +15,9 @@ public class MAIN extends JFrame {
         mostrarMensajeBienvenida(); // Llama al método que muestra el mensaje de bienvenida
         menuBar.setBackground(new Color(95, 158, 160)); // Ejemplo de color para la barra de menús
         menuBar.setForeground(Color.PINK); // Cambia el color de texto de la barra de menús a blanco
-        menuArchivo.setForeground(Color.WHITE); // Cambia el color de texto del menú a blanco
+        menuArchivo.setForeground(Color.BLUE); // Cambia el color de texto del menú a blanco
         menuHerramientas.setBackground(new Color(95, 158, 160)); // Ejemplo de color para la barra de menús
-        menuHerramientas.setForeground(Color.PINK);
+        menuHerramientas.setForeground(Color.MAGENTA); // Cambia el color de texto del menú a blanco
 
     }
 
