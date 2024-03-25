@@ -18,6 +18,9 @@ public class MAIN extends JFrame {
         menuArchivo.setForeground(Color.BLUE); // Cambia el color de texto del menú a blanco
         menuHerramientas.setBackground(new Color(95, 158, 160)); // Ejemplo de color para la barra de menús
         menuHerramientas.setForeground(Color.MAGENTA); // Cambia el color de texto del menú a blanco
+        menuItemEditor.setBackground(new Color(70, 130, 180)); // Un tono de azul acero
+        menuItemEditor.setForeground(Color.BLACK); // Texto en blanco
+
 
     }
 
