@@ -13,6 +13,11 @@ public class MAIN extends JFrame {
     public MAIN() {
         inicializarUI();
         mostrarMensajeBienvenida(); // Llama al método que muestra el mensaje de bienvenida
+        menuBar.setBackground(new Color(95, 158, 160)); // Ejemplo de color para la barra de menús
+        menuArchivo.setForeground(Color.WHITE); // Cambia el color de texto del menú a blanco
+        menuHerramientas.setBackground(new Color(95, 158, 160)); // Ejemplo de color para la barra de menús
+        menuHerramientas.setForeground(Color.PINK);
+
     }
 
 
@@ -56,6 +61,7 @@ public class MAIN extends JFrame {
         menuItemEditor.setFont(new Font("Roboto", Font.BOLD, 14));
 
 
+
         menuArchivo.add(menuItemEditor);
         menuHerramientas.add(menuItemDibujo);
         menuHerramientas.add(menuItemValidadorEmail);
@@ -70,6 +76,12 @@ public class MAIN extends JFrame {
 
         menuBar.add(menuArchivo);
         menuBar.add(menuHerramientas);
+        menuBar.setBackground(new Color(95, 158, 160)); // Un tono de azul cadete
+        menuArchivo.setForeground(Color.WHITE); // Texto del menú en blanco
+        menuHerramientas.setForeground(Color.WHITE); // Texto del menú en blanco
+        menuItemEditor.setFont(new Font("Roboto", Font.BOLD, 14)); // Cambia la fuente y el tamaño del texto
+
+
 
         setJMenuBar(menuBar);
 
