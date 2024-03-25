@@ -14,7 +14,8 @@ public class MAIN extends JFrame {
         inicializarUI();
         mostrarMensajeBienvenida(); // Llama al método que muestra el mensaje de bienvenida
         menuBar.setBackground(new Color(95, 158, 160)); // Ejemplo de color para la barra de menús
-        menuArchivo.setForeground(Color.WHITE); // Cambia el color de texto del menú a blanco
+        menuBar.setForeground(Color.PINK); // Cambia el color de texto de la barra de menús a blanco
+        menuArchivo.setForeground(Color.BLACK); // Cambia el color de texto del menú a blanco
         menuHerramientas.setBackground(new Color(95, 158, 160)); // Ejemplo de color para la barra de menús
         menuHerramientas.setForeground(Color.PINK);
 
@@ -194,6 +195,15 @@ public class MAIN extends JFrame {
 
 
 public static void main(String[] args) {
+    try {
+        for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+            if ("Nimbus".equals(info.getName())) {
+                UIManager.setLookAndFeel(info.getClassName());
+                break;
+            }
+        }
+    } catch (Exception e) {
+    }
         SwingUtilities.invokeLater(() -> new MAIN().setVisible(true));
     }
 }
