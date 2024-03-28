@@ -5,8 +5,8 @@ import java.awt.event.ActionListener;
 
 public class EditorPrincipal extends JFrame {
     private JMenuBar menuBar;
-    private JMenu menu;
-    private JMenuItem abrirNuevoDocumento;
+    private JMenu menuArchivos, menuOpciones;
+    private JMenuItem abrirNuevoDocumento, seleccionarPlantilla, cambiarModoOscuro;
     private Component areaDeTexto;
 
 
@@ -16,32 +16,32 @@ public class EditorPrincipal extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         menuBar = new JMenuBar();
-        menu = new JMenu("Archivo");
-
-
-        JMenuItem plantillasMenuItem = new JMenuItem("Seleccionar Plantilla");
-        plantillasMenuItem.addActionListener(e -> seleccionarPlantilla());
-        menu.add(plantillasMenuItem);
-        
-        
-        menuBar = new JMenuBar();
-        menu = new JMenu("Archivo");
+        menuArchivos = new JMenu("Archivo");
         abrirNuevoDocumento = new JMenuItem("Abrir Nuevo Documento");
         abrirNuevoDocumento.addActionListener(e -> abrirNuevoDocumento());
 
+        seleccionarPlantilla = new JMenuItem("Seleccionar Plantilla");
+        seleccionarPlantilla.addActionListener(e -> seleccionarPlantilla());
 
+        cambiarModoOscuro = new JMenuItem("Cambiar a Modo Oscuro");
+        cambiarModoOscuro.addActionListener(e -> cambiarAModoOscuro());
 
-        abrirNuevoDocumento.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                abrirNuevoDocumento();
-            }
-        });
+        menuArchivos.add(abrirNuevoDocumento);
+        menuArchivos.add(seleccionarPlantilla);
+        menuArchivos.add(cambiarModoOscuro);
 
-        menu.add(abrirNuevoDocumento);
-        menuBar.add(menu);
+        menuOpciones = new JMenu("Opciones");
+        cambiarModoOscuro = new JMenuItem("Cambiar a Modo Oscuro");
+        cambiarModoOscuro.addActionListener(e -> cambiarAModoOscuro());
+
+        menuBar.add(menuArchivos);
+        menuBar.add(menuOpciones);
+
         setJMenuBar(menuBar);
+
     }
+
+
 
     private void seleccionarPlantilla() {
         String[] plantillas = {"Carta", "Informe", "Artículo"};
