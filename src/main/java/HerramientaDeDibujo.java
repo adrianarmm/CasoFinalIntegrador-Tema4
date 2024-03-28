@@ -10,7 +10,7 @@ public class HerramientaDeDibujo extends JFrame {
     private Point startPoint = null;
     private String selectedShapeType = "Punto"; // Tipos: Punto, Línea, Rectángulo, Círculo
 
-    public HerramientaDeDibujoMejorada() {
+    public HerramientaDeDibujo () {
         setTitle("Herramienta de Dibujo Mejorada");
         setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -84,7 +84,7 @@ public class HerramientaDeDibujo extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new HerramientaDeDibujoMejorada().setVisible(true));
+        SwingUtilities.invokeLater(() -> new HerramientaDeDibujo().setVisible(true));
     }
 }
 
