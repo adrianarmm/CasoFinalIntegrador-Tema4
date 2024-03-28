@@ -11,7 +11,7 @@ public class HerramientaDeDibujo extends JFrame {
     private String selectedShapeType = "Punto"; // Tipos: Punto, Línea, Rectángulo, Círculo
 
     public HerramientaDeDibujo () {
-        setTitle("Herramienta de Dibujo Mejorada");
+        setTitle("Herramienta de Dibujo ");
         setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
