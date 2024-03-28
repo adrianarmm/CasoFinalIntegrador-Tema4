@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="112 MEJORA HERRAMIENTAS DE DIBUJO" />
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="115" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,31 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
       <workItem from="1710959254866" duration="2987000" />
-      <workItem from="1711107653751" duration="19943000" />
-    </task>
-    <task id="LOCAL-00063" summary="62">
-      <option name="closed" value="true" />
-      <created>1711135039644</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1711135039644</updated>
-    </task>
-    <task id="LOCAL-00064" summary="63">
-      <option name="closed" value="true" />
-      <created>1711135154905</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1711135154905</updated>
-    </task>
-    <task id="LOCAL-00065" summary="64">
-      <option name="closed" value="true" />
-      <created>1711140053392</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1711140053392</updated>
+      <workItem from="1711107653751" duration="20500000" />
     </task>
     <task id="LOCAL-00066" summary="64">
       <option name="closed" value="true" />
@@ -471,16 +447,37 @@
       <option name="project" value="LOCAL" />
       <updated>1711642906262</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="113">
+      <option name="closed" value="true" />
+      <created>1711643194041</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1711643194041</updated>
+    </task>
+    <task id="LOCAL-00113" summary="114">
+      <option name="closed" value="true" />
+      <created>1711643282205</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1711643282205</updated>
+    </task>
+    <task id="LOCAL-00114" summary="115">
+      <option name="closed" value="true" />
+      <created>1711643543000</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1711643543000</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="84" />
-    <MESSAGE value="85" />
-    <MESSAGE value="86" />
     <MESSAGE value="87" />
     <MESSAGE value="88" />
     <MESSAGE value="89" />
@@ -503,6 +500,9 @@
     <MESSAGE value="110 MEJORA HERRAMIENTAS DE DIBUJO" />
     <MESSAGE value="111 MEJORA HERRAMIENTAS DE DIBUJO" />
     <MESSAGE value="112 MEJORA HERRAMIENTAS DE DIBUJO" />
-    <option name="LAST_COMMIT_MESSAGE" value="112 MEJORA HERRAMIENTAS DE DIBUJO" />
+    <MESSAGE value="113" />
+    <MESSAGE value="114" />
+    <MESSAGE value="115" />
+    <option name="LAST_COMMIT_MESSAGE" value="115" />
   </component>
 </project>

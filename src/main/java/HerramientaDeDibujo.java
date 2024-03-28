@@ -17,7 +17,7 @@ public class HerramientaDeDibujo extends JFrame {
 
         JMenuBar menuBar = new JMenuBar();
         JMenu shapeMenu = new JMenu("Formas");
-        String[] shapeOptions = {"Punto", "Línea", "Rectángulo", "Círculo ,Hexagono", "Heptagono", "Octagono", "Estrella", "Corazon", "Flecha", "Rombo", "Romboide", "Trapecio", "Paralelogramo", "Trapezoide"};
+        String[] shapeOptions = {"Punto", "Línea", "Rectángulo", "Círculo" , "Hexagono", "Heptagono", "Octagono", "Estrella", "Flecha", "Rombo", "Romboide", "Trapecio", "Paralelogramo", "Trapezoide"};
         for (String shapeOption : shapeOptions) {
             JMenuItem item = new JMenuItem(shapeOption);
             item.addActionListener(e -> selectedShapeType = shapeOption);
@@ -99,9 +99,7 @@ public class HerramientaDeDibujo extends JFrame {
             case "Estrella":
                 shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, (startPoint.x + endPoint.x) / 2, startPoint.x, endPoint.x}, new int[] {startPoint.y, startPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y, endPoint.y}, 5));
                 break;
-            case "Corazon":
-                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, (startPoint.x + endPoint.x) / 2}, new int[] {startPoint.y, startPoint.y, endPoint.y}, 3));
-                break;
+
             case "Flecha":
                 shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x, (startPoint.x + endPoint.x) / 2, startPoint.x, startPoint.x + (endPoint.x - startPoint.x) / 4, startPoint.x + (endPoint.x - startPoint.x) / 4, startPoint.x + 3 * (endPoint.x - startPoint.x) / 4, startPoint.x + 3 * (endPoint.x - startPoint.x) / 4}, new int[] {startPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y - (endPoint.y - startPoint.y) / 4, endPoint.y, startPoint.y}, 9));
                 break;
