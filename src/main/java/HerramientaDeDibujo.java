@@ -17,7 +17,7 @@ public class HerramientaDeDibujo extends JFrame {
 
         JMenuBar menuBar = new JMenuBar();
         JMenu shapeMenu = new JMenu("Formas");
-        String[] shapeOptions = {"Punto", "Línea", "Rectángulo", "Círculo"};
+        String[] shapeOptions = {"Punto", "Línea", "Rectángulo", "Círculo ,Hexagono", "Heptagono", "Octagono", "Estrella", "Corazon", "Flecha", "Rombo", "Romboide", "Trapecio", "Paralelogramo", "Trapezoide"};
         for (String shapeOption : shapeOptions) {
             JMenuItem item = new JMenuItem(shapeOption);
             item.addActionListener(e -> selectedShapeType = shapeOption);
@@ -79,6 +79,51 @@ public class HerramientaDeDibujo extends JFrame {
             case "Círculo":
                 shapes.add(new Ellipse2D.Float(x, y, width, width)); // Asumiendo que queremos mantener la proporción para que sea un círculo
                 break;
+
+            case "Triangulo":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, startPoint.x}, new int[] {startPoint.y, endPoint.y, endPoint.y}, 3));
+                break;
+            case "Cuadrado":
+                shapes.add(new Rectangle(x, y, width, width));
+                break;
+
+            case "Hexagono":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x, (startPoint.x + endPoint.x) / 2, startPoint.x, startPoint.x}, new int[] {startPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y, endPoint.y, (startPoint.y + endPoint.y) / 2, startPoint.y}, 6));
+                break;
+            case "Heptagono":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x, (startPoint.x + endPoint.x) / 2, startPoint.x, startPoint.x, (startPoint.x + endPoint.x) / 2}, new int[] {startPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y, endPoint.y, (startPoint.y + endPoint.y) / 2, startPoint.y, startPoint.y}, 7));
+                break;
+            case "Octagono":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x, (startPoint.x + endPoint.x) / 2, startPoint.x, startPoint.x, (startPoint.x + endPoint.x) / 2, endPoint.x}, new int[] {startPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y, endPoint.y, (startPoint.y + endPoint.y) / 2, startPoint.y, startPoint.y, (startPoint.y + endPoint.y) / 2}, 8));
+                break;
+            case "Estrella":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, (startPoint.x + endPoint.x) / 2, startPoint.x, endPoint.x}, new int[] {startPoint.y, startPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y, endPoint.y}, 5));
+                break;
+            case "Corazon":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, (startPoint.x + endPoint.x) / 2}, new int[] {startPoint.y, startPoint.y, endPoint.y}, 3));
+                break;
+            case "Flecha":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x, (startPoint.x + endPoint.x) / 2, startPoint.x, startPoint.x + (endPoint.x - startPoint.x) / 4, startPoint.x + (endPoint.x - startPoint.x) / 4, startPoint.x + 3 * (endPoint.x - startPoint.x) / 4, startPoint.x + 3 * (endPoint.x - startPoint.x) / 4}, new int[] {startPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y - (endPoint.y - startPoint.y) / 4, endPoint.y, startPoint.y}, 9));
+                break;
+            case "Rombo":
+                shapes.add(new Polygon(new int[] {startPoint.x, (startPoint.x + endPoint.x) / 2, endPoint.x, (startPoint.x + endPoint.x) / 2}, new int[] {(startPoint.y + endPoint.y) / 2, startPoint.y, (startPoint.y + endPoint.y) / 2, endPoint.y}, 4));
+                break;
+            case "Romboide":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x - (endPoint.x - startPoint.x) / 4, startPoint.x - (endPoint.x - startPoint.x) / 4}, new int[] {startPoint.y, startPoint.y, endPoint.y, endPoint.y}, 4));
+                break;
+            case "Trapecio":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x - (endPoint.x - startPoint.x) / 4, startPoint.x - (endPoint.x - startPoint.x) / 4}, new int[] {startPoint.y, startPoint.y, endPoint.y - (endPoint.y - startPoint.y) / 4, endPoint.y - (endPoint.y - startPoint.y) / 4}, 4));
+                break;
+            case "Paralelogramo":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x - (endPoint.x - startPoint.x) / 4, startPoint.x - (endPoint.x - startPoint.x) / 4}, new int[] {startPoint.y, startPoint.y, endPoint.y, endPoint.y}, 4));
+                break;
+            case "Trapezoide":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x - (endPoint.x - startPoint.x) / 4, startPoint.x - (endPoint.x - startPoint.x) / 4}, new int[] {startPoint.y, startPoint.y, endPoint.y - (endPoint.y - startPoint.y) / 4, endPoint.y - (endPoint.y - startPoint.y) / 4}, 4));
+                break;
+            case "Pentagono":
+                shapes.add(new Polygon(new int[] {startPoint.x, endPoint.x, endPoint.x - (endPoint.x - startPoint.x) / 4, (startPoint.x + endPoint.x) / 2, startPoint.x + (endPoint.x - startPoint.x) / 4}, new int[] {startPoint.y, startPoint.y, endPoint.y - (endPoint.y - startPoint.y) / 4, endPoint.y, endPoint.y - (endPoint.y - startPoint.y) / 4}, 5));
+                break;
+
         }
         repaint();
     }
