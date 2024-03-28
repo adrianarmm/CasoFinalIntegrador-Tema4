@@ -176,6 +176,9 @@ public class MAIN extends JFrame {
 
 
 
+
+
+
     private static ImageIcon escalarImagen(ImageIcon iconoOriginal, int anchoDeseado, int altoDeseado) {
         if (iconoOriginal == null) return null;
         Image imagenOriginal = iconoOriginal.getImage();
@@ -193,7 +196,10 @@ public class MAIN extends JFrame {
         seguimiento.setVisible(true);
     }
 
-
+private void abrirHerramientaDeDibujo() {
+        HerramientaDeDibujo herramientaDibujo = new HerramientaDeDibujo();
+        herramientaDibujo.setVisible(true);
+    }
 
 
 

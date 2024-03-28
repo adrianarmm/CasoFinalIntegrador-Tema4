@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="109 IMPLEMENTACION DE COLOR EN LA APLICACION FUNCIONAL, TAMBIEN ESTA AÑADIDO LOS ICONOS">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="112 MEJORA HERRAMIENTAS DE DIBUJO" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +40,7 @@
     "Application.DocumentoConBarraDeDesplazamiento.executor": "Run",
     "Application.EditorPrincipal.executor": "Run",
     "Application.HerramientaDeDibujo.executor": "Run",
+    "Application.HerramientaDeDibujoMejorada.executor": "Run",
     "Application.Iconos.executor": "Run",
     "Application.MAIN.executor": "Run",
     "Application.SeguimientoRaton.executor": "Run",
@@ -78,31 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
       <workItem from="1710959254866" duration="2987000" />
-      <workItem from="1711107653751" duration="19609000" />
-    </task>
-    <task id="LOCAL-00060" summary="59">
-      <option name="closed" value="true" />
-      <created>1711134460647</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1711134460647</updated>
-    </task>
-    <task id="LOCAL-00061" summary="60">
-      <option name="closed" value="true" />
-      <created>1711134623714</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1711134623714</updated>
-    </task>
-    <task id="LOCAL-00062" summary="61">
-      <option name="closed" value="true" />
-      <created>1711134948911</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1711134948912</updated>
+      <workItem from="1711107653751" duration="19943000" />
     </task>
     <task id="LOCAL-00063" summary="62">
       <option name="closed" value="true" />
@@ -472,16 +447,37 @@
       <option name="project" value="LOCAL" />
       <updated>1711392081077</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="110 MEJORA HERRAMIENTAS DE DIBUJO">
+      <option name="closed" value="true" />
+      <created>1711642853506</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1711642853506</updated>
+    </task>
+    <task id="LOCAL-00110" summary="111 MEJORA HERRAMIENTAS DE DIBUJO">
+      <option name="closed" value="true" />
+      <created>1711642875934</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1711642875935</updated>
+    </task>
+    <task id="LOCAL-00111" summary="112 MEJORA HERRAMIENTAS DE DIBUJO">
+      <option name="closed" value="true" />
+      <created>1711642906261</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1711642906262</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="81" />
-    <MESSAGE value="82" />
-    <MESSAGE value="83" />
     <MESSAGE value="84" />
     <MESSAGE value="85" />
     <MESSAGE value="86" />
@@ -504,6 +500,9 @@
     <MESSAGE value="105" />
     <MESSAGE value="106" />
     <MESSAGE value="109 IMPLEMENTACION DE COLOR EN LA APLICACION FUNCIONAL, TAMBIEN ESTA AÑADIDO LOS ICONOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="109 IMPLEMENTACION DE COLOR EN LA APLICACION FUNCIONAL, TAMBIEN ESTA AÑADIDO LOS ICONOS" />
+    <MESSAGE value="110 MEJORA HERRAMIENTAS DE DIBUJO" />
+    <MESSAGE value="111 MEJORA HERRAMIENTAS DE DIBUJO" />
+    <MESSAGE value="112 MEJORA HERRAMIENTAS DE DIBUJO" />
+    <option name="LAST_COMMIT_MESSAGE" value="112 MEJORA HERRAMIENTAS DE DIBUJO" />
   </component>
 </project>
