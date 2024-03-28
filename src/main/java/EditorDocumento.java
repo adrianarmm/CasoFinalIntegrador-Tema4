@@ -11,4 +11,7 @@ public class EditorDocumento extends JFrame {
         areaDeTexto = new JTextArea();
         add(new JScrollPane(areaDeTexto));
     }
+
+    public void rellenarContenido(String contenidoPlantilla) {
+    }
 }
