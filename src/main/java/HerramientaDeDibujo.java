@@ -5,7 +5,7 @@ import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-public class HerramientaDeDibujoMejorada extends JFrame {
+public class HerramientaDeDibujo extends JFrame {
     private ArrayList<Shape> shapes = new ArrayList<>();
     private Point startPoint = null;
     private String selectedShapeType = "Punto"; // Tipos: Punto, Línea, Rectángulo, Círculo
