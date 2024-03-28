@@ -93,7 +93,7 @@ public class MAIN extends JFrame {
             EditorDocumento editor = new EditorDocumento();
             editor.setVisible(true);
         });
-        menuItemDibujo.addActionListener(e -> new HerramientaDeDibujo().setVisible(true));
+        menuItemDibujo.addActionListener(e -> abrirHerramientaDeDibujo());
 
         menuItemDibujo.addActionListener(e -> JOptionPane.showMessageDialog(this, "BIENVENIDO", "Información", JOptionPane.INFORMATION_MESSAGE));
         menuItemValidadorEmail.addActionListener(e -> {
