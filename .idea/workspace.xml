@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="102">
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="109 IMPLEMENTACION DE COLOR EN LA APLICACION FUNCIONAL, TAMBIEN ESTA AÑADIDO LOS ICONOS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,47 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
       <workItem from="1710959254866" duration="2987000" />
-      <workItem from="1711107653751" duration="17430000" />
-    </task>
-    <task id="LOCAL-00055" summary="54">
-      <option name="closed" value="true" />
-      <created>1711134117610</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1711134117610</updated>
-    </task>
-    <task id="LOCAL-00056" summary="55">
-      <option name="closed" value="true" />
-      <created>1711134222331</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1711134222331</updated>
-    </task>
-    <task id="LOCAL-00057" summary="56">
-      <option name="closed" value="true" />
-      <created>1711134239568</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1711134239568</updated>
-    </task>
-    <task id="LOCAL-00058" summary="57">
-      <option name="closed" value="true" />
-      <created>1711134373521</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1711134373521</updated>
-    </task>
-    <task id="LOCAL-00059" summary="58">
-      <option name="closed" value="true" />
-      <created>1711134437287</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1711134437287</updated>
+      <workItem from="1711107653751" duration="19609000" />
     </task>
     <task id="LOCAL-00060" summary="59">
       <option name="closed" value="true" />
@@ -473,18 +432,53 @@
       <option name="project" value="LOCAL" />
       <updated>1711391334462</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="103">
+      <option name="closed" value="true" />
+      <created>1711391697412</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1711391697412</updated>
+    </task>
+    <task id="LOCAL-00105" summary="104">
+      <option name="closed" value="true" />
+      <created>1711391792313</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1711391792313</updated>
+    </task>
+    <task id="LOCAL-00106" summary="105">
+      <option name="closed" value="true" />
+      <created>1711391826372</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1711391826372</updated>
+    </task>
+    <task id="LOCAL-00107" summary="106">
+      <option name="closed" value="true" />
+      <created>1711391871771</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1711391871771</updated>
+    </task>
+    <task id="LOCAL-00108" summary="109 IMPLEMENTACION DE COLOR EN LA APLICACION FUNCIONAL, TAMBIEN ESTA AÑADIDO LOS ICONOS">
+      <option name="closed" value="true" />
+      <created>1711392081077</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1711392081077</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="75" />
-    <MESSAGE value="76" />
-    <MESSAGE value="77" />
-    <MESSAGE value="78" />
-    <MESSAGE value="80" />
     <MESSAGE value="81" />
     <MESSAGE value="82" />
     <MESSAGE value="83" />
@@ -505,6 +499,11 @@
     <MESSAGE value="100" />
     <MESSAGE value="101" />
     <MESSAGE value="102" />
-    <option name="LAST_COMMIT_MESSAGE" value="102" />
+    <MESSAGE value="103" />
+    <MESSAGE value="104" />
+    <MESSAGE value="105" />
+    <MESSAGE value="106" />
+    <MESSAGE value="109 IMPLEMENTACION DE COLOR EN LA APLICACION FUNCIONAL, TAMBIEN ESTA AÑADIDO LOS ICONOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="109 IMPLEMENTACION DE COLOR EN LA APLICACION FUNCIONAL, TAMBIEN ESTA AÑADIDO LOS ICONOS" />
   </component>
 </project>
