@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="116">
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="118">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EditorPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EditorPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -79,23 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
       <workItem from="1710959254866" duration="2987000" />
-      <workItem from="1711107653751" duration="20899000" />
-    </task>
-    <task id="LOCAL-00067" summary="65">
-      <option name="closed" value="true" />
-      <created>1711140308681</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1711140308681</updated>
-    </task>
-    <task id="LOCAL-00068" summary="66">
-      <option name="closed" value="true" />
-      <created>1711140525489</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1711140525489</updated>
+      <workItem from="1711107653751" duration="21579000" />
     </task>
     <task id="LOCAL-00069" summary="67">
       <option name="closed" value="true" />
@@ -473,15 +459,29 @@
       <option name="project" value="LOCAL" />
       <updated>1711643628953</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="117">
+      <option name="closed" value="true" />
+      <created>1711644020747</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1711644020747</updated>
+    </task>
+    <task id="LOCAL-00117" summary="118">
+      <option name="closed" value="true" />
+      <created>1711644138626</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1711644138626</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="88" />
-    <MESSAGE value="89" />
     <MESSAGE value="90" />
     <MESSAGE value="91" />
     <MESSAGE value="92" />
@@ -505,6 +505,8 @@
     <MESSAGE value="114" />
     <MESSAGE value="115" />
     <MESSAGE value="116" />
-    <option name="LAST_COMMIT_MESSAGE" value="116" />
+    <MESSAGE value="117" />
+    <MESSAGE value="118" />
+    <option name="LAST_COMMIT_MESSAGE" value="118" />
   </component>
 </project>
