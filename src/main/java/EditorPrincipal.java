@@ -61,9 +61,6 @@ public class EditorPrincipal extends JFrame {
         getContentPane().setBackground(Color.DARK_GRAY);
         areaDeTexto.setBackground(Color.BLACK);
         areaDeTexto.setForeground(Color.WHITE);
-        menuBar.setBackground(Color.GRAY);
-        menuBar.setForeground(Color.WHITE);
-
     }
 
     private void abrirNuevoDocumento() {
