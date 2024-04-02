@@ -7,7 +7,7 @@ public class EditorPrincipal extends JFrame {
     private JMenuBar menuBar;
     private JMenu menuArchivos, menuOpciones;
     private JMenuItem abrirNuevoDocumento, seleccionarPlantilla, cambiarModoOscuro;
-    private Component areaDeTexto;
+    private JTextArea areaDeTexto;
 
 
     public EditorPrincipal() {
