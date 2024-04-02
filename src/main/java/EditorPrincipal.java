@@ -26,6 +26,7 @@ public class EditorPrincipal extends JFrame {
         cambiarModoOscuro = new JMenuItem("Cambiar a Modo Oscuro");
         cambiarModoOscuro.addActionListener(e -> cambiarAModoOscuro());
 
+
         menuArchivos.add(abrirNuevoDocumento);
         menuArchivos.add(seleccionarPlantilla);
         menuArchivos.add(cambiarModoOscuro);
@@ -62,7 +63,7 @@ public class EditorPrincipal extends JFrame {
         areaDeTexto.setForeground(Color.WHITE);
         menuBar.setBackground(Color.GRAY);
         menuBar.setForeground(Color.WHITE);
-        // Actualiza el resto de componentes según sea necesario
+
     }
 
     private void abrirNuevoDocumento() {

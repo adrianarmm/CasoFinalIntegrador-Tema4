@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="118">
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="120 IMPLEMENTO PLANTILLAS Y MODOS POR EJEMPLO MODO OSCURO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EditorPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EditorPrincipal.java" afterDir="false" />
     </list>
@@ -81,23 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710959253792</updated>
       <workItem from="1710959254866" duration="2987000" />
-      <workItem from="1711107653751" duration="21579000" />
-    </task>
-    <task id="LOCAL-00069" summary="67">
-      <option name="closed" value="true" />
-      <created>1711141940741</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1711141940741</updated>
-    </task>
-    <task id="LOCAL-00070" summary="68">
-      <option name="closed" value="true" />
-      <created>1711142042998</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1711142042998</updated>
+      <workItem from="1711107653751" duration="22786000" />
     </task>
     <task id="LOCAL-00071" summary="68">
       <option name="closed" value="true" />
@@ -475,15 +459,29 @@
       <option name="project" value="LOCAL" />
       <updated>1711644138626</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="119 IMPLEMENTO PLANTILLAS Y MODOS POR EJEMPLO MODO OSCURO">
+      <option name="closed" value="true" />
+      <created>1711644713306</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1711644713307</updated>
+    </task>
+    <task id="LOCAL-00119" summary="120 IMPLEMENTO PLANTILLAS Y MODOS POR EJEMPLO MODO OSCURO">
+      <option name="closed" value="true" />
+      <created>1711644947633</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1711644947633</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="90" />
-    <MESSAGE value="91" />
     <MESSAGE value="92" />
     <MESSAGE value="93" />
     <MESSAGE value="94" />
@@ -507,6 +505,8 @@
     <MESSAGE value="116" />
     <MESSAGE value="117" />
     <MESSAGE value="118" />
-    <option name="LAST_COMMIT_MESSAGE" value="118" />
+    <MESSAGE value="119 IMPLEMENTO PLANTILLAS Y MODOS POR EJEMPLO MODO OSCURO" />
+    <MESSAGE value="120 IMPLEMENTO PLANTILLAS Y MODOS POR EJEMPLO MODO OSCURO" />
+    <option name="LAST_COMMIT_MESSAGE" value="120 IMPLEMENTO PLANTILLAS Y MODOS POR EJEMPLO MODO OSCURO" />
   </component>
 </project>
