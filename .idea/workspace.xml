@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="125">
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="129">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,39 +82,7 @@
       <workItem from="1710959254866" duration="2987000" />
       <workItem from="1711107653751" duration="23172000" />
       <workItem from="1712049998168" duration="1198000" />
-      <workItem from="1712680763393" duration="1729000" />
-    </task>
-    <task id="LOCAL-00076" summary="74">
-      <option name="closed" value="true" />
-      <created>1711142956963</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1711142956963</updated>
-    </task>
-    <task id="LOCAL-00077" summary="75">
-      <option name="closed" value="true" />
-      <created>1711143285038</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1711143285038</updated>
-    </task>
-    <task id="LOCAL-00078" summary="76">
-      <option name="closed" value="true" />
-      <created>1711143470072</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1711143470072</updated>
-    </task>
-    <task id="LOCAL-00079" summary="77">
-      <option name="closed" value="true" />
-      <created>1711143703763</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1711143703763</updated>
+      <workItem from="1712680763393" duration="2834000" />
     </task>
     <task id="LOCAL-00080" summary="78">
       <option name="closed" value="true" />
@@ -476,17 +444,45 @@
       <option name="project" value="LOCAL" />
       <updated>1712681593049</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="126">
+      <option name="closed" value="true" />
+      <created>1712682531394</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1712682531394</updated>
+    </task>
+    <task id="LOCAL-00126" summary="127">
+      <option name="closed" value="true" />
+      <created>1712682561277</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1712682561277</updated>
+    </task>
+    <task id="LOCAL-00127" summary="128">
+      <option name="closed" value="true" />
+      <created>1712682579751</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1712682579751</updated>
+    </task>
+    <task id="LOCAL-00128" summary="129">
+      <option name="closed" value="true" />
+      <created>1712682589305</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1712682589305</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="99" />
-    <MESSAGE value="100" />
-    <MESSAGE value="101" />
-    <MESSAGE value="102" />
     <MESSAGE value="103" />
     <MESSAGE value="104" />
     <MESSAGE value="105" />
@@ -508,6 +504,10 @@
     <MESSAGE value="123 IMPLEMENTO PLANTILLAS Y MODOS POR EJEMPLO MODO OSCURO" />
     <MESSAGE value="124" />
     <MESSAGE value="125" />
-    <option name="LAST_COMMIT_MESSAGE" value="125" />
+    <MESSAGE value="126" />
+    <MESSAGE value="127" />
+    <MESSAGE value="128" />
+    <MESSAGE value="129" />
+    <option name="LAST_COMMIT_MESSAGE" value="129" />
   </component>
 </project>
