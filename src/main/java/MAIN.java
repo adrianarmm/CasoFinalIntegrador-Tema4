@@ -7,8 +7,8 @@ import java.util.HashMap;
 
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
-    private JMenu menuArchivo, menuHerramientas, menuModoOscuro;
-    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento, menuItemTextEditorConListing, menuItemSeguimientoRaton, menuItemTextEditor;
+    private JMenu menuArchivo, menuHerramientas;
+    private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento, menuItemTextEditorConListing, menuItemSeguimientoRaton, menuItemTextEditor, menuItemModoOscuro;
 
     public MAIN() {
         inicializarUI();
@@ -36,7 +36,7 @@ public class MAIN extends JFrame {
         menuBar = new JMenuBar();
         menuArchivo = new JMenu("Archivo");
         menuHerramientas = new JMenu("Herramientas");
-        menuModoOscuro = (JMenu) new JMenuItem("Modo Oscuro");
+        JMenuItem menuModoOscuro = new JMenuItem("Modo Oscuro");
 
         // Intenta cargar los iconos
         ImageIcon iconoEditor = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 30, 30);
@@ -76,6 +76,7 @@ public class MAIN extends JFrame {
         menuHerramientas.add(menuItemTextEditorConListing);
         menuHerramientas.add(menuItemSeguimientoRaton);
         menuHerramientas.add(menuItemTextEditor);
+
 
 
 
