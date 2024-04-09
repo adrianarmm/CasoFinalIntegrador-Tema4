@@ -13,7 +13,6 @@ public class MAIN extends JFrame {
     public MAIN() {
         inicializarUI();
         mostrarMensajeBienvenida(); // Llama al método que muestra el mensaje de bienvenida
-        cambiarAModoOscuro(); // Llama al método que cambia el estilo de la interfaz
         menuBar.setBackground(new Color(95, 158, 160)); // Ejemplo de color para la barra de menús
         menuBar.setForeground(Color.PINK); // Cambia el color de texto de la barra de menús a blanco
         menuArchivo.setForeground(Color.BLUE); // Cambia el color de texto del menú a blanco
