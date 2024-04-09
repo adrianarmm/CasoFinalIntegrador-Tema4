@@ -233,5 +233,7 @@ public static void main(String[] args) {
     } catch (Exception e) {
     }
         SwingUtilities.invokeLater(() -> new MAIN().setVisible(true));
+        SwingUtilities.invokeLater(() -> new MAIN().setVisible(true));
+}
     }
 }
