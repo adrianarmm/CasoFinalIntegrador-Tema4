@@ -207,7 +207,6 @@ private void abrirHerramientaDeDibujo() {
 
         if (result == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-            // Pedir al usuario la palabra a buscar
             String searchWord = JOptionPane.showInputDialog(this, "Ingrese la palabra a buscar:");
             if (searchWord != null && !searchWord.isEmpty()) {
                 try {
