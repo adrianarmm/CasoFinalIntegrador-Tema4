@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="124">
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="125">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,15 +82,7 @@
       <workItem from="1710959254866" duration="2987000" />
       <workItem from="1711107653751" duration="23172000" />
       <workItem from="1712049998168" duration="1198000" />
-      <workItem from="1712680763393" duration="630000" />
-    </task>
-    <task id="LOCAL-00075" summary="73">
-      <option name="closed" value="true" />
-      <created>1711142865646</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1711142865646</updated>
+      <workItem from="1712680763393" duration="1729000" />
     </task>
     <task id="LOCAL-00076" summary="74">
       <option name="closed" value="true" />
@@ -477,14 +468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712681086119</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="125">
+      <option name="closed" value="true" />
+      <created>1712681593049</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1712681593049</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="96" />
     <MESSAGE value="99" />
     <MESSAGE value="100" />
     <MESSAGE value="101" />
@@ -509,27 +507,7 @@
     <MESSAGE value="122 IMPLEMENTO PLANTILLAS Y MODOS POR EJEMPLO MODO OSCURO" />
     <MESSAGE value="123 IMPLEMENTO PLANTILLAS Y MODOS POR EJEMPLO MODO OSCURO" />
     <MESSAGE value="124" />
-    <option name="LAST_COMMIT_MESSAGE" value="124" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MAIN.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MAIN.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MAIN.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="125" />
+    <option name="LAST_COMMIT_MESSAGE" value="125" />
   </component>
 </project>
