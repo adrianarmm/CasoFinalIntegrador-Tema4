@@ -78,6 +78,7 @@ public class MAIN extends JFrame {
 
 
 
+
         menuBar.add(menuArchivo);
         menuBar.add(menuHerramientas);
         menuBar.setBackground(new Color(95, 158, 160)); // Un tono de azul cadete
@@ -108,9 +109,7 @@ public class MAIN extends JFrame {
             agenda.setVisible(true);
         });
 
-        menuItemBusquedaPalabras.addActionListener(e -> realizarBusquedaPalabras());
-    {
-        };
+
 
         menuItemDocConBarraDesplazamiento.addActionListener(e -> {
             DocumentoConBarraDeDesplazamiento documento = new DocumentoConBarraDeDesplazamiento();
@@ -200,7 +199,27 @@ private void abrirHerramientaDeDibujo() {
         HerramientaDeDibujo herramientaDibujo = new HerramientaDeDibujo();
         herramientaDibujo.setVisible(true);
     }
+    private void BusquedaPalabras() {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+        int result = fileChooser.showOpenDialog(this);
 
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            // Pedir al usuario la palabra a buscar
+            String searchWord = JOptionPane.showInputDialog(this, "Ingrese la palabra a buscar:");
+            if (searchWord != null && !searchWord.isEmpty()) {
+                try {
+                    int occurrences = BusquedaPalabras.countBusquedaPalabras(selectedFile, searchWord);
+                    JOptionPane.showMessageDialog(this, "La palabra \"" + searchWord + "\" aparece " + occurrences + " veces en el documento.", "Resultado de Búsqueda", JOptionPane.INFORMATION_MESSAGE);
+                } catch (IOException e) {
+                    JOptionPane.showMessageDialog(this, "Ocurrió un error al leer el archivo: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            } else {
+                JOptionPane.showMessageDialog(this, "Búsqueda cancelada o palabra inválida.", "Búsqueda Cancelada", JOptionPane.WARNING_MESSAGE);
+            }
+        }
+    }
 
 
 public static void main(String[] args) {
