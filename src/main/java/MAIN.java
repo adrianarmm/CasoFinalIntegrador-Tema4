@@ -210,26 +210,6 @@ private void abrirHerramientaDeDibujo() {
         // Si no, necesitarías implementar un método similar dentro de cada clase que tenga un área de texto y llamarlo aquí.
     }
 
-    private void BusquedaPalabras() {
-        JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
-        int result = fileChooser.showOpenDialog(this);
-
-        if (result == JFileChooser.APPROVE_OPTION) {
-            File selectedFile = fileChooser.getSelectedFile();
-            String searchWord = JOptionPane.showInputDialog(this, "Ingrese la palabra a buscar:");
-            if (searchWord != null && !searchWord.isEmpty()) {
-                try {
-                    int occurrences = BusquedaPalabras.countBusquedaPalabras(selectedFile, searchWord);
-                    JOptionPane.showMessageDialog(this, "La palabra \"" + searchWord + "\" aparece " + occurrences + " veces en el documento.", "Resultado de Búsqueda", JOptionPane.INFORMATION_MESSAGE);
-                } catch (IOException e) {
-                    JOptionPane.showMessageDialog(this, "Ocurrió un error al leer el archivo: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-                }
-            } else {
-                JOptionPane.showMessageDialog(this, "Búsqueda cancelada o palabra inválida.", "Búsqueda Cancelada", JOptionPane.WARNING_MESSAGE);
-            }
-        }
-    }
 
 
 public static void main(String[] args) {
