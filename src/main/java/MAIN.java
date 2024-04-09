@@ -36,6 +36,7 @@ public class MAIN extends JFrame {
         menuBar = new JMenuBar();
         menuArchivo = new JMenu("Archivo");
         menuHerramientas = new JMenu("Herramientas");
+
         JMenuItem menuModoOscuro = new JMenuItem("Modo Oscuro");
 
         // Intenta cargar los iconos
