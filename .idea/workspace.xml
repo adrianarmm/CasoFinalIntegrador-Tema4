@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="129">
+    <list default="true" id="cff8d0c1-a9cf-4a54-a8e4-ca0f00b84e3a" name="Changes" comment="130">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EditorPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EditorPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,15 +84,7 @@
       <workItem from="1710959254866" duration="2987000" />
       <workItem from="1711107653751" duration="23172000" />
       <workItem from="1712049998168" duration="1198000" />
-      <workItem from="1712680763393" duration="2834000" />
-    </task>
-    <task id="LOCAL-00080" summary="78">
-      <option name="closed" value="true" />
-      <created>1711143806603</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1711143806603</updated>
+      <workItem from="1712680763393" duration="3284000" />
     </task>
     <task id="LOCAL-00081" summary="78">
       <option name="closed" value="true" />
@@ -476,14 +470,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712682589305</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="130">
+      <option name="closed" value="true" />
+      <created>1712691197912</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1712691197912</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="103" />
     <MESSAGE value="104" />
     <MESSAGE value="105" />
     <MESSAGE value="106" />
@@ -508,6 +509,7 @@
     <MESSAGE value="127" />
     <MESSAGE value="128" />
     <MESSAGE value="129" />
-    <option name="LAST_COMMIT_MESSAGE" value="129" />
+    <MESSAGE value="130" />
+    <option name="LAST_COMMIT_MESSAGE" value="130" />
   </component>
 </project>

@@ -199,7 +199,17 @@ public class MAIN extends JFrame {
 private void abrirHerramientaDeDibujo() {
         HerramientaDeDibujo herramientaDibujo = new HerramientaDeDibujo();
         herramientaDibujo.setVisible(true);
+
     }
+
+    private void cambiarAModoOscuro() {
+        // Esto es un ejemplo simplificado. Deberías cambiar los colores de todos los componentes.
+        getContentPane().setBackground(Color.DARK_GRAY);
+        // Suponiendo que tienes acceso al área de texto aquí
+
+        // Si no, necesitarías implementar un método similar dentro de cada clase que tenga un área de texto y llamarlo aquí.
+    }
+
     private void BusquedaPalabras() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
@@ -232,6 +242,8 @@ public static void main(String[] args) {
         }
     } catch (Exception e) {
     }
+
+
         SwingUtilities.invokeLater(() -> new MAIN().setVisible(true));
 
 }

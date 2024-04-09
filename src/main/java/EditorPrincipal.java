@@ -20,8 +20,6 @@ public class EditorPrincipal extends JFrame {
         abrirNuevoDocumento = new JMenuItem("Abrir Nuevo Documento");
         abrirNuevoDocumento.addActionListener(e -> abrirNuevoDocumento());
 
-        seleccionarPlantilla = new JMenuItem("Seleccionar Plantilla");
-        seleccionarPlantilla.addActionListener(e -> seleccionarPlantilla());
 
         cambiarModoOscuro = new JMenuItem("Cambiar a Modo Oscuro");
         cambiarModoOscuro.addActionListener(e -> cambiarAModoOscuro());
@@ -44,18 +42,6 @@ public class EditorPrincipal extends JFrame {
 
 
 
-    private void seleccionarPlantilla() {
-        String[] plantillas = {"Carta", "Informe", "Artículo"};
-        String seleccion = (String) JOptionPane.showInputDialog(this, "Selecciona una plantilla:",
-                "Plantillas", JOptionPane.QUESTION_MESSAGE, null, plantillas, plantillas[0]);
-        if (seleccion != null) {
-            // Aquí puedes definir el contenido de cada plantilla
-            String contenidoPlantilla = obtenerContenidoPlantilla(seleccion);
-            EditorDocumento documento = new EditorDocumento();
-            documento.rellenarContenido(contenidoPlantilla);
-            documento.setVisible(true);
-        }
-    }
 
     private void cambiarAModoOscuro() {
         getContentPane().setBackground(Color.DARK_GRAY);
