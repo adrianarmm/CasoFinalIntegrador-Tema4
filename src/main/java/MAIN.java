@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class MAIN extends JFrame {
     private JMenuBar menuBar;
-    private JMenu menuArchivo, menuHerramientas;
+    private JMenu menuArchivo, menuHerramientas, menuModoOscuro;
     private JMenuItem menuItemEditor, menuItemDibujo, menuItemValidadorEmail, menuItemAgenda, menuItemBusquedaPalabras, menuItemDocConBarraDesplazamiento, menuItemTextEditorConListing, menuItemSeguimientoRaton, menuItemTextEditor;
 
     public MAIN() {
@@ -36,6 +36,7 @@ public class MAIN extends JFrame {
         menuBar = new JMenuBar();
         menuArchivo = new JMenu("Archivo");
         menuHerramientas = new JMenu("Herramientas");
+        menuModoOscuro = (JMenu) new JMenuItem("Modo Oscuro");
 
         // Intenta cargar los iconos
         ImageIcon iconoEditor = escalarImagen(cargarIcono("/Users/adrianareyesmorera/Documents/desarrollo-web.png"), 30, 30);
@@ -81,6 +82,7 @@ public class MAIN extends JFrame {
 
         menuBar.add(menuArchivo);
         menuBar.add(menuHerramientas);
+        menuBar.add(menuModoOscuro);
         menuBar.setBackground(new Color(95, 158, 160)); // Un tono de azul cadete
         menuArchivo.setForeground(Color.WHITE); // Texto del menú en blanco
         menuHerramientas.setForeground(Color.WHITE); // Texto del menú en blanco
@@ -132,7 +134,7 @@ public class MAIN extends JFrame {
             TextEditor textEditor = new TextEditor();
             textEditor.setVisible(true);
         });
-
+    menuModoOscuro.addActionListener(e -> cambiarAModoOscuro());
 
     }
 
